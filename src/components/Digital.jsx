@@ -29,7 +29,7 @@ const services = [
                     </div>
                     <div className='text-start'>
                         <h3 className="text-xl font-bold lg:mb-2">{service.title}</h3>
-                        <p>{service.description}</p>
+                        <p className='text-gray-700'>{service.description}</p>
                     </div>
                     
                 </div>
