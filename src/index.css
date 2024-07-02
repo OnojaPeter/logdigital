@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-text {
+    font-size: 3rem;
+}
+
+@media (max-width:640px) {
+    .hero-text {
+        font-size: calc(1.7rem + 1vw);
+    }
+}
+
+@media (min-width:641px) and (max-width:1024px) {
+    .hero-text {
+        font-size: calc(2rem + 0.4vw);
+    }
+}
+@media  (min-width:1025px) and (max-width:1280px) {
+    .hero-text {
+        font-size: 2.5rem
+    }
+}
+
+/* App.css or appropriate CSS file */
+.service-container {
+    position: relative;
+  }
+  
+  .horizontal-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #d1d5db; /* Adjust color as needed */
+    transform: translateY(-50%);
+  }
+  
+  .vertical-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #d1d5db; /* Adjust color as needed */
+  }
+  
+  .vertical-line-1 {
+    left: 33.33%; /* Adjust percentage as needed */
+  }
+  
+  .vertical-line-2 {
+    left: 66.66%; /* Adjust percentage as needed */
+  }
+  
+
+  /* App.css or appropriate CSS file */
+.video-container {
+    background-color: black;
+    padding: 20px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Full viewport height */
+  }
+  
+  .video-element {
+    width: 100%;
+    max-width: 800px; /* Adjust max-width as needed */
+    border-radius: 10px; /* Optional: add border-radius for rounded corners */
+  }
+  
