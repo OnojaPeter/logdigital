@@ -55,19 +55,24 @@
   }
   
 
-  /* App.css or appropriate CSS file */
+  /* for video section */
 .video-container {
-    background-color: black;
-    padding: 20px; /* Adjust padding as needed */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* Full viewport height */
-  }
+  background-color: black;
+  padding: 20px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Full viewport height */
+}
+
+.video-element {
+  width: 100%;
+  max-width: 800px; /* Adjust max-width as needed */
+  border-radius: 10px; /* Optional: add border-radius for rounded corners */
+}
   
-  .video-element {
-    width: 100%;
-    max-width: 800px; /* Adjust max-width as needed */
-    border-radius: 10px; /* Optional: add border-radius for rounded corners */
-  }
-  
+.bg-gradient{
+  background-color: blue;
+  width: 100px;
+  position: absolute;
+}
