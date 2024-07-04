@@ -14,9 +14,9 @@ const FeatureSection = ({ sectionName, title, description, buttonText, imageSrc,
                     <p className="text-lg mb-3 md:mb-8 text-gray-700">{description}</p>
 
                     {extraText && extraText.map((text, index) => (
-                        <span className="flex items-center gap-2 my-2 md:my-4">
+                        <span key={index} className="flex items-center gap-2 my-2 md:my-4">
                             <img className="h-10 w-10" src="/images/service-logo.png" alt="" />
-                            <p key={index} className="text-lg text-gray-700 capitalize">{text}</p>
+                            <p  className="text-lg text-gray-700 capitalize">{text}</p>
                         </span>
                     ))}
 
