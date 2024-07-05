@@ -9,7 +9,7 @@ const ChooseUs = () => {
             title="choose us to grow your business"
             description="Et et id laoreet ultricies elementum venenatis ornare. Sollicitudin mauris id aliquet magna adipiscing. ut accumsan."
             extraText={peter}
-            imageSrc="/images/black-pic.png"
+            imageSrc="/images/laptop-office.jpg"
       />
 
         {/* <FeatureSection

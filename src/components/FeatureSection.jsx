@@ -45,7 +45,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                             initial="hidden" 
                             animate={moreTextAnimation.controls} 
                             variants={moreTextAnimation.textVariants} 
-                            className="text-lg mb-3 md:mb-8 text-gray-700 md:hidden lg:block"
+                            className="text-lg mb-3 md:mb-8 text-gray-700"
                         >
                             {moreDescription}
                         </motion.p>
@@ -83,9 +83,9 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                             initial="hidden"
                             animate={imageAnimation.controls}
                             variants={imageAnimation.imageVariants}
-                            className="rounded-lg shadow-lg"
+                            className="rounded-lg shadow-lg object-cover h-[250px] md:h-[400px] w-full"
                         />
-                        <p className="absolute text-white top-[45%]">picture here</p>
+                        {/* <p className="absolute text-white top-[45%]">picture here</p> */}
                         {/*  className="object-contain w-full h-full" */}
                     </div>
                 </div>

@@ -17,9 +17,10 @@ const Hero = () => {
     };
     const images = [
         "/images/hero-pic.avif",
-        "/images/black-pic.png",
-        // "/path/to/image3.jpg",
-        // Add more images as needed
+        "/images/media-marketing.jpg",
+        "/images/marketing-branding.jpg",
+        "/images/marketing_2.jpg",
+        "/images/socials-transp.png"
       ];
 
     const imageAnimation = useScrollAnimation();

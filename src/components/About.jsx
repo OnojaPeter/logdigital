@@ -9,7 +9,7 @@ const About = () => {
         description="Et et id laoreet ultricies elementum venenatis ornare.  In lorem lacus quis egestas tincidunt neque ut accumsan."
         moreDescription="Et et id laoreet ultricies elementum venenatis ornare.  In lorem lacus quis egestas tincidunt neque ut accumsan."
         buttonText="Learn More"
-        imageSrc="/images/black-pic.png"
+        imageSrc="/images/meeting-group.jpg"
       />
     </section>
   );
