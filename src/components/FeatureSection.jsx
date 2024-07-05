@@ -24,26 +24,28 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                 <div className=" flex flex-col gap-y-6 md:flex-row md:gap-2 lg:gap-10 mt-6 md:mt-14">
                     <div className=" md:w-[50%]">
                         <motion.h2 
-                        ref={descriptionAnimation.ref} 
-                        initial="hidden" 
-                        animate={descriptionAnimation.controls} 
-                        variants={descriptionAnimation.textVariants} 
-                        className="text-4xl font-bold mb-3 md:mb-8 capitalize">
-                            <h2 >{title}</h2>
+                            ref={descriptionAnimation.ref} 
+                            initial="hidden" 
+                            animate={descriptionAnimation.controls} 
+                            variants={descriptionAnimation.textVariants} 
+                            className="text-4xl font-bold mb-3 md:mb-8 capitalize">
+                                {title}
                         </motion.h2>
                         {/* <h2 className="text-4xl font-bold mb-3 md:mb-8 capitalize">{title}</h2> */}
                         <motion.p ref={textAnimation.ref} 
-                        initial="hidden" 
-                        animate={textAnimation.controls} 
-                        variants={textAnimation.textVariants} >
-                        <p className="text-lg mb-3 md:mb-8 text-gray-700">{description}</p>
+                            initial="hidden" 
+                            animate={textAnimation.controls} 
+                            variants={textAnimation.textVariants} >
+                            className="text-lg mb-3 md:mb-8 text-gray-700"
+                                {description}
                         </motion.p>
 
                         <motion.p ref={moreTextAnimation.ref} 
-                        initial="hidden" 
-                        animate={moreTextAnimation.controls} 
-                        variants={moreTextAnimation.textVariants} >
-                            <p className="text-lg mb-3 md:mb-8 text-gray-700 md:hidden lg:block">{moreDescription}</p>
+                            initial="hidden" 
+                            animate={moreTextAnimation.controls} 
+                            variants={moreTextAnimation.textVariants} >
+                            className="text-lg mb-3 md:mb-8 text-gray-700 md:hidden lg:block"
+                                {moreDescription}
                         </motion.p>
 
                         {extraText && extraText.map((text, index) => (
