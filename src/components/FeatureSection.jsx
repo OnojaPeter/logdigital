@@ -35,29 +35,44 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                         <motion.p ref={textAnimation.ref} 
                             initial="hidden" 
                             animate={textAnimation.controls} 
-                            variants={textAnimation.textVariants} >
+                            variants={textAnimation.textVariants} 
                             className="text-lg mb-3 md:mb-8 text-gray-700"
-                                {description}
+                        >
+                            {description}
                         </motion.p>
 
                         <motion.p ref={moreTextAnimation.ref} 
                             initial="hidden" 
                             animate={moreTextAnimation.controls} 
-                            variants={moreTextAnimation.textVariants} >
+                            variants={moreTextAnimation.textVariants} 
                             className="text-lg mb-3 md:mb-8 text-gray-700 md:hidden lg:block"
-                                {moreDescription}
+                        >
+                            {moreDescription}
                         </motion.p>
 
                         {extraText && extraText.map((text, index) => (
-                            <span key={index} className="flex items-center gap-2 my-2 md:my-4">
+                            <motion.span
+                            ref={textAnimation.ref} 
+                            initial="hidden" 
+                            animate={textAnimation.controls} 
+                            variants={textAnimation.variants} 
+                             key={index} className="flex items-center gap-2 my-2 md:my-4">
                                 <img className="h-10 w-10" src="/images/service-logo.png" alt="" />
                                 <p className="text-lg text-gray-700 capitalize">{text}</p>
-                            </span>
+                            </motion.span>
                         ))}
 
-                        {buttonText && <button className="bg-purple-700 text-white px-6 py-3 rounded">
-                            {buttonText}
-                        </button>}
+                        {buttonText && 
+                        <motion.button
+                            ref={textAnimation.ref}
+                            variants={textAnimation.buttonVariants}
+                            whileHover={{ scale: 1.1, boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)" }}
+                            whileTap={{ scale: 0.9 }}
+                            initial="hidden" 
+                            animate={textAnimation.controls}
+                            className="bg-purple-700 text-white px-6 py-3 rounded">
+                                {buttonText}
+                        </motion.button>}
                     </div>
                     <div className="flex justify-center md:w-[50%] relative">
                         {/* <img src={imageSrc} alt="" /> */}
