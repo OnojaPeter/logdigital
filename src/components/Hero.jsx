@@ -47,7 +47,7 @@ const Hero = () => {
       };
 
     return (
-        <section className="py-5 md:py-20">
+        <section className="pt-5 md:py-20 svgBackground ">
             <div className="max-w-[1400px] mx-auto  md:px-8 lg:px-16 text-start flex flex-col md:flex-row gap-5 lg:gap-10">
                 <div className="md:w-[50%] flex flex-col justify-around gap-2 px-4 md:px-0">
                     <motion.h1 
@@ -57,7 +57,7 @@ const Hero = () => {
                     variants={h1Variants}
                     className="hero-text font-bold">Boost Your Online Presence with Digital Marketing Services</motion.h1>
 
-                    <div className="flex flex-col gap-4 pr-[10%] sm:pr-[0%] lg:pr-[25%] text-gray-700 text-gray-500 ">
+                    <div className="flex flex-col gap-4 pr-[10%] sm:pr-[0%] lg:pr-[25%] text-black md:text-lg md:font-semibold">
                         <motion.p 
                         ref={text1Animation.ref}
                         animate={text1Animation.controls} 
@@ -82,7 +82,7 @@ const Hero = () => {
                         whileTap={{ scale: 0.9 }}
                         initial="hidden" 
                         animate={text2Animation.controls}
-                        className="bg-gray-800 hover:bg-gray-100 hover:text-gray-900 border-2 border-gray-800 text-gray-100 px-4 py-3 rounded-md shadow-2xl font-medium">Get started</motion.button>
+                        className="bg-gray-800 hover:bg-gray-100 hover:text-gray-900 border-2 border-gray-800 text-gray-100 px-4 py-2 md:py-3 rounded-md shadow-2xl font-medium">Get started</motion.button>
                     </div>
                 </div>
 

@@ -2,7 +2,7 @@ import FeatureSection from "./FeatureSection";
 const peter = [ "results-driven approach", "Social Mediaexpertise in multiple platforms", "continuous optimization"]
 const ChooseUs = () => {
   return (
-    <section className="bg-gray-200 py-20">
+    <section className="text-white py-20 chooseUsBg">
 
         <FeatureSection
             sectionName="why choose us"
@@ -11,14 +11,6 @@ const ChooseUs = () => {
             extraText={peter}
             imageSrc="/images/laptop-office.jpg"
       />
-
-        {/* <FeatureSection
-            title="Feature with Icon"
-            description="Description with an icon."
-            buttonText="Get Started"
-            imageSrc="/images/black-pic.png"
-            icon="images/service-logo.png"
-        /> */}
     </section>
 
     

@@ -14,7 +14,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Digital />
+      {/* <Digital /> */}
       <About />
       <Services />
       {/* <Video /> */}

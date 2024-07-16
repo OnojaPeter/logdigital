@@ -2,7 +2,7 @@ import FeatureSection from "./FeatureSection";
 
 const About = () => {
   return (
-    <section className="py-10 md:py-20">    
+    <section className="py-10 md:py-20 text-gray-700 aboutBg">    
       <FeatureSection
         sectionName="about us"
         title="Helping Millions Grow Better Since 2010"
