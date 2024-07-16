@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import Navlink from './Navlink';
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
@@ -17,12 +18,13 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-900 py-4">
       <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16 flex justify-between items-center">
-        <a href="/" className="text-white text-2xl font-bold">LOGDIGITAL</a>
+        <Link to="/" className="text-white text-2xl font-bold">LOGDIGITAL</Link>
         
         <ul className="md:flex space-x-3 lg:space-x-6 text-white hidden font-semibold">
           {/* <Navlink /> */}
-          <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+            
             <div 
               className="relative" 
               onMouseEnter={() => setIsServicesDropdownOpen(true)}
@@ -47,8 +49,8 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <li><a href="#career">Career</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><Link to="/career">Career</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
         </ul>
 
         <div className='hidden md:block'>
@@ -80,7 +82,7 @@ const Navbar = () => {
             </svg>
           </button>
           <nav className="flex-grow p-4">
-            <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <Link to="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</Link>
             <div className="relative">
               <a 
                 href="#" 
@@ -111,8 +113,8 @@ const Navbar = () => {
                 )}
               </div>
             </div>
-            <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">About</a>
-            <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+            <Link to="/about" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">About</Link>
+            <Link to="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</Link>
           </nav>
         </div>
       </div>
