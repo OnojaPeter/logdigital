@@ -82,7 +82,13 @@ const Navbar = () => {
             </svg>
           </button>
           <nav className="flex-grow p-4">
-            <Link to="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</Link>
+            <Link onClick={() => setIsMobileMenuOpen(false)}  to="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+              Home
+            </Link>
+            <Link onClick={() => setIsMobileMenuOpen(false)} to="/about" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+              About
+            </Link>
+
             <div className="relative">
               <a 
                 href="#" 
@@ -113,8 +119,8 @@ const Navbar = () => {
                 )}
               </div>
             </div>
-            <Link to="/about" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">About</Link>
-            <Link to="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</Link>
+      
+            <Link onClick={() => setIsMobileMenuOpen(false)} to="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</Link>
           </nav>
         </div>
       </div>
