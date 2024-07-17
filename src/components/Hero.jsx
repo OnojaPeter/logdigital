@@ -55,7 +55,7 @@ const Hero = () => {
                     initial="hidden"
                     animate={h1Animation.controls}
                     variants={h1Variants}
-                    className="hero-text font-bold">Boost Your Online Presence with Digital Marketing Services</motion.h1>
+                    className="hero-text font-bold">Your trusted partner in Technology, Marketing, and Business Management Excellence.</motion.h1> {/* Boost Your Online Presence with Digital Marketing Services*/}
 
                     <div className="flex flex-col gap-4 pr-[10%] sm:pr-[0%] lg:pr-[25%] text-black md:text-lg md:font-semibold">
                         <motion.p 
@@ -64,14 +64,14 @@ const Hero = () => {
                         initial="hidden" 
                         variants={text1Variants} 
                         >
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit facere sapiente, earum nihil.</motion.p>
-                        <motion.p 
+                            We help you navigate the digital landscape with innovative solutions tailored to your unique needs.</motion.p>
+                        {/* <motion.p 
                         ref={text2Animation.ref}
                         animate={text2Animation.controls} 
                         initial="hidden" 
                         variants={text2Variants} 
                         >
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit facere sapiente, earum nihil.</motion.p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit facere sapiente, earum nihil.</motion.p> */}
                     </div>
 
                     <div className="flex ">
