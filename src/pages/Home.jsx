@@ -12,14 +12,12 @@ function Home() {
 
   return (
     <>
-      {/* <Navbar /> */}
       <Hero />
       {/* <Digital /> */}
       <About />
       <Services />
       {/* <Video /> */}
       <ChooseUs />
-      {/* <Footer /> */}
     </>
   )
 }
