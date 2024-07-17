@@ -3,18 +3,20 @@ function AboutPage() {
     return (
       <>
         <section>
-          <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16 pb-8 md:pb-14">
-            <div className="py-8 md:py-14 relative">
-              <div className="h-28 sm:h-40 w-full bg-black opacity-30 ">
-                <img className="h-28 sm:h-40 object-cover w-full" src="/images/media-marketing.jpg" alt="" />
-                
+          <div className="  pb-8 md:pb-14">
+            <div className="h-28 sm:h-40 relative">
+              <div className=" w-full bg-black blur-sm absolute inset-0">
+                <img className="h-28 sm:h-40 object-cover w-full" src="/images/media-marketing.jpg" alt="" />             
               </div>
-              <h1 className="uppercase text-4xl sm:text-5xl md:text-6xl font-semibold text-center absolute inset-16 sm:inset-20 md:inset-28 ">About Us</h1>
+
+              <div className="flex h-full justify-center items-center relative">
+                <h1 className="uppercase text-gray-100 text-4xl sm:text-5xl md:text-6xl font-semibold  ">About Us</h1>
+              </div>
             </div>
             
-            <div className="space-y-3 text-lg font-medium text-gray-600">
+            <div className="space-y-3 text-lg font-medium text-gray-600 mt-6 max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16">
               <div className="space-y-3">
-                <p className="text-gray-800 text-xl sm:text-2xl">Welcome to LogDigital Limited: Your Partner in Tech, Marketing, and Business Management Excellence</p>
+                <p className="text-gray-800 text-xl sm:text-3xl">Welcome to LogDigital Limited: Your Partner in Tech, Marketing, and Business Management Excellence</p>
                  
                 <p>
                   At <span className="text-xl text-gray-800">LogDigital</span>, we transform visionary ideas into tangible success stories. Our firm stands at the intersection of cutting-edge technology, strategic marketing, and dynamic business management, offering a holistic approach to driving growth and innovation.
