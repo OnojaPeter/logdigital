@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from 'framer-motion';
 import useScrollAnimation from '../hooks/useScrollAnimation';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     const settings = {
@@ -21,7 +22,7 @@ const Hero = () => {
         "/images/marketing-branding.jpg",
         "/images/marketing_2.jpg",
         "/images/socials-transp.png"
-      ];
+    ];
 
     const imageAnimation = useScrollAnimation();
     const h1Animation = useScrollAnimation();
@@ -82,7 +83,9 @@ const Hero = () => {
                         whileTap={{ scale: 0.9 }}
                         initial="hidden" 
                         animate={text2Animation.controls}
-                        className="bg-gray-800 hover:bg-gray-100 hover:text-gray-900 border-2 border-gray-800 text-gray-100 px-4 py-2 md:py-3 rounded-md shadow-2xl font-medium">Get started</motion.button>
+                        className="bg-gray-800 hover:bg-gray-100 hover:text-gray-900 border-2 border-gray-800 text-gray-100 px-4 py-2 md:py-3 rounded-md shadow-2xl font-medium">
+                            <Link to="/contact">Get started</Link>
+                        </motion.button>
                     </div>
                 </div>
 

@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import useScrollAnimation from '../hooks/useScrollAnimation';
+import { Link } from 'react-router-dom';
 
-const FeatureSection = ({ sectionName, title, description, moreDescription, buttonText, imageSrc, extraText }) => {
+const FeatureSection = ({ sectionName, title, description, moreDescription, buttonText, imageSrc, extraText, link }) => {
     // const { ref, controls, variants, textVariants, imageVariants } = useScrollAnimation();
     const imageAnimation = useScrollAnimation();
     const descriptionAnimation = useScrollAnimation();
@@ -71,7 +72,8 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                             initial="hidden" 
                             animate={textAnimation.controls}
                             className="bg-purple-700 text-white px-6 py-3 rounded">
-                                {buttonText}
+
+                                <Link to={link}> {buttonText} </Link>                              
                         </motion.button>}
                     </div>
                     <div className="flex justify-center md:w-[50%] relative">

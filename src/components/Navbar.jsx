@@ -55,7 +55,7 @@ const Navbar = () => {
 
         <div className='hidden md:block'>
           <Button>
-            Get Started
+            <Link to="/contact">Get started</Link>
           </Button>
         </div>
 
