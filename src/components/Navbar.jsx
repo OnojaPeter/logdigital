@@ -3,13 +3,12 @@ import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import Navlink from './Navlink';
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
+import { servicesDetail } from '../Data';
 
-const services = [
-  "Service 1", "Service 2", "Service 3", "Service 4", "Service 5",
-  "Service 6", "Service 7", "Service 8", "Service 9", "Service 10",
-  "Service 11", "Service 12", "Service 13", "Service 14", "Service 15",
-  "Service 16", "Service 17", "Service 18"
-];
+// const services = [
+//   { id: 1, name: "Service 1", description: "Description for Service 1", path: "/services/1" },
+//   { id: 2, name: "Service 2", description: "Description for Service 2", path: "/services/2" },
+// ];
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -30,21 +29,29 @@ const Navbar = () => {
               onMouseEnter={() => setIsServicesDropdownOpen(true)}
               onMouseLeave={() => setIsServicesDropdownOpen(false)}
             >
-              <a href="#" >Services</a>
+              <a href="#" className="relative z-10">Services</a>
               <div
-                className={`absolute left-1/2 transform -translate-x-1/2 w-[500px] lg:w-[900px] bg-white rounded-md shadow-lg py-6 z-20 transition-opacity duration-300 ease-in-out ${
+                className={`absolute left-1/2 transform -translate-x-1/2 w-[250px] lg:w-[300px] bg-white rounded-md shadow-lg py-3 z-20 transition-opacity duration-300 ease-in-out ${
                   isServicesDropdownOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}
               >
-                <div className="flex flex-wrap">
-                  {services.map((service, index) => (
-                    <a 
-                      key={index} 
-                      href="#" 
-                      className="w-1/3 px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-900 text-center"
+                <div className=" flex flex-col">
+                  {servicesDetail.map((service) => (
+                    <Link 
+                      key={service.id} 
+                      to={service.path}
+                      onClick={() => setIsServicesDropdownOpen(false)}
+                      className="rounded-md mx-4 py-2 text-gray-800 hover:text-white hover:bg-gray-900 text-center"
                     >
-                      {service}
-                    </a>
+                      {service.name}
+                    </Link>
+                    // <a 
+                    //   key={index} 
+                    //   href="#" 
+                    //   className="w-1/3 px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-900 text-center"
+                    // >
+                    //   {service}
+                    // </a>
                   ))}
                 </div>
               </div>
@@ -103,16 +110,24 @@ const Navbar = () => {
                 }`}
               >
                 {isServicesDropdownOpen && (
-                  <div className="mt-2 bg-white rounded-md shadow-lg py-2 z-20">
-                    <div className="flex flex-wrap">
-                      {services.map((service, index) => (
-                        <a 
-                          key={index} 
-                          href="#" 
-                          className="w-1/2 px-4 py-2 text-gray-800 hover:bg-gray-100"
+                  <div className="mt-2 bg-blue-100 rounded-md shadow-lg py-2 z-20">
+                    <div className="flex flex-col">
+                      {servicesDetail.map((service) => (
+                        <Link 
+                          key={service.id} 
+                          to={service.path}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className="px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-900 text-center"
                         >
-                          {service}
-                        </a>
+                          {service.name}
+                        </Link>
+                        // <a 
+                        //   key={index} 
+                        //   href="#" 
+                        //   className="w-1/2 px-4 py-2 text-gray-800 hover:bg-gray-100"
+                        // >
+                        //   {service}
+                        // </a>
                       ))}
                     </div>
                   </div>

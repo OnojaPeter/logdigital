@@ -48,7 +48,7 @@ const Hero = () => {
       };
 
     return (
-        <section className="pt-5 mb-10 md:mb-0 md:py-20 svgBackground ">
+        <section className="pt-5 mb-10 md:mb-0 md:py-20  bg-blue-50">{/* svgBackground */}
             <div className="max-w-[1400px] mx-auto  md:px-8 lg:px-16 text-start flex flex-col md:flex-row gap-10">
                 <div className="md:w-[50%] flex flex-col justify-around gap-2 px-4 md:px-0">
                     <motion.h1 

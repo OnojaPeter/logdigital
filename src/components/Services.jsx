@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 
-import services from "../Data";
+import {services} from "../Data";
   
   const Services = () => {
     // const { ref, controls, variants,textVariants } = useScrollAnimation();

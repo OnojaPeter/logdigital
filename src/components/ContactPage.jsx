@@ -4,7 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const ContactPage = () => {
     return (
-        <section className="bg-gray-100 py-7 md:py-12 h-full">
+        <section className="bg-gray-50 py-7 md:py-12 h-full">
             <div className="max-w-[1400px] mx-auto text-center px-4 md:px-8 lg:px-16">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 capitalize">want to get in touch?</h2>
                 <p className='sm:mx-10 md:mx-20 lg:mx-32 text-sm md:text-lg mt-2'>We love hearing from people, whether they're our users or just curious about what we do. If you have any questions about our products or want to give us feedback, don't hesitate to get in touch with us</p>
