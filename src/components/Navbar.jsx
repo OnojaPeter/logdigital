@@ -148,7 +148,7 @@ const Navbar = () => {
             </svg>
           </button>
           <nav className=" p-4 text-center flex items-center justify-center h-full">
-            <div className='flex flex-col space-y-6 h-[100vh] w-full overflow-auto overscroll-contain'>
+            <div className='flex flex-col mt-20 space-y-6 h-[100vh] w-full overflow-auto overscroll-contain'>
               <Link onClick={() => setIsMobileMenuOpen(false)}  to="/" className="text-5xl font-bold block px-4 text-gray-700 hover:bg-gray-100">
                 Home
               </Link>
@@ -162,7 +162,7 @@ const Navbar = () => {
                   className="relative text-5xl font-bold block px-4 py-1 text-gray-700 hover:bg-gray-100"
                   onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
                 >
-                  <span >Services </span>{isServicesDropdownOpen ? <MdKeyboardArrowUp className='absolute top-3  sm:right-40 arrow' /> : <MdKeyboardArrowDown className='absolute top-3  sm:right-40 arrow' /> }
+                  <span >Services </span>{isServicesDropdownOpen ? <MdKeyboardArrowUp className='absolute top-2  sm:right-40 arrow' /> : <MdKeyboardArrowDown className='absolute top-2  sm:right-40 arrow' /> }
                 </a> 
                 <div
                   className={`relative inset-x-0 transition-opacity duration-300 ease-in-out ${
@@ -177,7 +177,7 @@ const Navbar = () => {
                             key={service.id} 
                             to={service.path}
                             onClick={() => setIsMobileMenuOpen(false)}
-                            className="px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-900 text-center text-2xl font-medium border-b-2 border-gray-400"
+                            className="px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-900 text-center text-2xl font-medium "
                           >
                             {service.name}
                           </Link>
