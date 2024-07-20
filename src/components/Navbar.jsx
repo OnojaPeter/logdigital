@@ -1,74 +1,126 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import Navlink from './Navlink';
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
 import { servicesDetail } from '../Data';
 
-// const services = [
-//   { id: 1, name: "Service 1", description: "Description for Service 1", path: "/services/1" },
-//   { id: 2, name: "Service 2", description: "Description for Service 2", path: "/services/2" },
-// ];
-
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  const [selectedTab, setSelectedTab] = useState('radio-1');
+  const gliderRef = useRef(null);
+
+  const updateGliderPosition = () => {
+    const activeLabel = document.querySelector(`label[htmlFor=${selectedTab}]`);
+    if (activeLabel && gliderRef.current) {
+      gliderRef.current.style.width = `${activeLabel.offsetWidth}px`;
+      gliderRef.current.style.left = `${activeLabel.offsetLeft}px`;
+    }
+  };
+  useEffect(() => {
+    updateGliderPosition();
+    window.addEventListener('resize', updateGliderPosition);
+    return () => window.removeEventListener('resize', updateGliderPosition);
+  }, [selectedTab]);
 
   return (
-    <nav className="bg-gray-900 py-4">
+    <nav className="bg-blue-200 py-4 ">
       <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16 flex justify-between items-center">
-        <Link to="/" className="text-white text-2xl font-bold">LOGDIGITAL</Link>
         
-        <ul className="md:flex space-x-3 lg:space-x-6 text-white hidden font-semibold">
+        <Link to="/" className="text-blue-900 text-2xl font-bold z-50 relative">LOGDIGITAL</Link>
+        
+        <ul className="md:flex space-x-3 lg:space-x-6 text-blue-900 hidden font-bold text-lg">
           {/* <Navlink /> */}
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-            
-            <div 
-              className="relative" 
-              onMouseEnter={() => setIsServicesDropdownOpen(true)}
-              onMouseLeave={() => setIsServicesDropdownOpen(false)}
-            >
-              <a href="#" className="relative z-10">Services</a>
-              <div
-                className={`absolute left-1/2 transform -translate-x-1/2 w-[250px] lg:w-[300px] bg-white rounded-md shadow-lg py-3 z-20 transition-opacity duration-300 ease-in-out ${
-                  isServicesDropdownOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
-                }`}
+          <div className="container-class">
+            <div className="tabs">
+              <input
+                type="radio"
+                id="radio-1"
+                name="tabs"
+                checked={selectedTab === 'radio-1'}
+                onChange={() => setSelectedTab('radio-1')}
+              />
+              <label className="tab" htmlFor="radio-1">
+                <Link to="/" onClick={() => setSelectedTab('radio-1')}>Home</Link>
+                {/* <span className="notification">2</span> */}
+              </label>
+
+              <input
+                type="radio"
+                id="radio-2"
+                name="tabs"
+                checked={selectedTab === 'radio-2'}
+                onChange={() => setSelectedTab('radio-2')}
+              />
+              <label className="tab" htmlFor="radio-2">
+                <Link to="/about" onClick={() => setSelectedTab('radio-2')}>About</Link>
+              </label>
+
+              <input
+                type="radio"
+                id="radio-3"
+                name="tabs"
+                checked={selectedTab === 'radio-3'}
+                onChange={() => setSelectedTab('radio-3')}
+              />
+              <label className="tab" htmlFor="radio-3">
+              <div 
+                className="relative z-[999]" 
+                onMouseEnter={() => setIsServicesDropdownOpen(true)}
+                onMouseLeave={() => setIsServicesDropdownOpen(false)}
               >
-                <div className=" flex flex-col">
-                  {servicesDetail.map((service) => (
-                    <Link 
-                      key={service.id} 
-                      to={service.path}
-                      onClick={() => setIsServicesDropdownOpen(false)}
-                      className="rounded-md mx-4 py-2 text-gray-800 hover:text-white hover:bg-gray-900 text-center"
-                    >
-                      {service.name}
-                    </Link>
-                    // <a 
-                    //   key={index} 
-                    //   href="#" 
-                    //   className="w-1/3 px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-900 text-center"
-                    // >
-                    //   {service}
-                    // </a>
-                  ))}
+                Services
+                <div
+                  className={`absolute left-1/2 transform -translate-x-1/2 w-[250px] lg:w-[300px] bg-white rounded-md shadow-lg py-3 z-50 transition-opacity duration-300 ease-in-out ${
+                    isServicesDropdownOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                  }`}
+                >
+                  <div className=" flex flex-col">
+                    {servicesDetail.map((service) => (
+                      <Link 
+                        key={service.id} 
+                        to={service.path}
+                        onClick={() => setIsServicesDropdownOpen(false)}
+                        
+                        className="rounded-md mx-4 py-2 text-gray-800 hover:text-white hover:bg-blue-400 text-center"
+                      >
+                        <p onClick={() => setSelectedTab('radio-3')}>{service.name}</p>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
+              </label>
+
+              <input
+                type="radio"
+                id="radio-4"
+                name="tabs"
+                checked={selectedTab === 'radio-4'}
+                onChange={() => setSelectedTab('radio-4')}
+              />
+              <label className="tab" htmlFor="radio-4">
+                <Link to="/contact" onClick={() => setSelectedTab('radio-4')}>Contact Us</Link>
+              </label>
+              
+              <span className="glider"></span>
             </div>
-            <li><Link to="/career">Career</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li>
+          </div>
+          
         </ul>
 
-        <div className='hidden md:block'>
-          <Button>
-            <Link to="/contact">Get started</Link>
-          </Button>
+        <div className='hidden md:block'>           
+            <button className="btn-18">
+                <span className="text-container">
+                    <span ><Link className="text" to="/contact">Get started</Link></span>
+                </span>
+            </button>
         </div>
 
         <div className='md:hidden block cursor-pointer'>
           <button onClick={()=>{setIsMobileMenuOpen(!isMobileMenuOpen)}} >
-            <FaBarsStaggered className='text-white text-2xl' />
+            <FaBarsStaggered className='text-blue-900 text-2xl' />
           </button>
         </div>
         
@@ -144,4 +196,36 @@ const Navbar = () => {
 };
 
 export default Navbar;
-// className="w-1/3 px-4 py-2 text-gray-600 hover:text-white hover:bg-gray-900 text-center"
+// Fomer desktop nav 
+{/* <ul>
+<li className='hover:text-white hover:border-b-2 border-blue-900'><Link to="/">Home</Link></li>
+<li className='hover:text-white hover:border-b-2 border-blue-900'><Link to="/about">About</Link></li>
+
+<div 
+  className="relative z-[999]" 
+  onMouseEnter={() => setIsServicesDropdownOpen(true)}
+  onMouseLeave={() => setIsServicesDropdownOpen(false)}
+>
+  <a href="#" className="relative z-10 hover:text-white hover:border-b-2 border-blue-900">Services</a>
+  <div
+    className={`absolute left-1/2 transform -translate-x-1/2 w-[250px] lg:w-[300px] bg-white rounded-md shadow-lg py-3 z-20 transition-opacity duration-300 ease-in-out ${
+      isServicesDropdownOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+    }`}
+  >
+    <div className=" flex flex-col">
+      {servicesDetail.map((service) => (
+        <Link 
+          key={service.id} 
+          to={service.path}
+          onClick={() => setIsServicesDropdownOpen(false)}
+          className="rounded-md mx-4 py-2 text-gray-800 hover:text-white hover:bg-blue-400 text-center"
+        >
+          {service.name}
+        </Link>
+      ))}
+    </div>
+  </div>
+</div>
+<li className='hover:text-white hover:border-b-2 border-blue-900'><Link to="/career">Career</Link></li>
+<li className='hover:text-white hover:border-b-2 border-blue-900'><Link to="/contact">Contact Us</Link></li>
+</ul> */}

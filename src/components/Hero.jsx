@@ -48,17 +48,28 @@ const Hero = () => {
       };
 
     return (
-        <section className="pt-5 mb-10 md:mb-0 md:py-20  bg-blue-50">{/* svgBackground */}
-            <div className="max-w-[1400px] mx-auto  md:px-8 lg:px-16 text-start flex flex-col md:flex-row gap-10">
+        <section className="pt-10 mb-10 md:mb-0 md:py-20  bg-blue-100 relative  ">{/* pt-5 svgBackground */}
+            <div className='w-full h-full bg-white left-0 absolute top-0  bg-gradient-to-t from-white via-gray-200 to-blue-200'></div>
+            {/* <div className='w-full'>
+                <div className='w-[50%] h-full bg-white left-0 absolute top-0 z-50 bg-gradient-to-t from-white via-gray-500 to-green-500'></div>
+                <div className='w-[50%] h-full bg-white right-0 absolute top-0 z-50 bg-gradient-to-r from-white bg-gray-500'></div>
+            </div> */}
+            {/* <div className='bg-white w-[500px] h-[500px] absolute -left-40 -top-24 opacity-50 rounded-full z-40 bg-gradient-to-t from-indigo-200 via-blue-200 to-blue-200'></div> */}
+            {/* <div className='h-[400px] w-[400px] rounded-full -left-28 -top-24 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-300 via-pink-300 to-blue-300 z-40 absolute'></div> */}
+            <div className='absolute w-96 h-96 flex items-center justify-center z-40 -left-28 -top-28'>
+                <div className='relative w-96 h-96 bg-blue-50 rounded-full gradient-border'></div>
+            </div>
+
+            <div className="max-w-[1400px] mx-auto  md:px-8 lg:px-16 text-start flex flex-col md:flex-row gap-10 relative z-40">
                 <div className="md:w-[50%] flex flex-col justify-around gap-2 px-4 md:px-0">
                     <motion.h1 
                     ref={h1Animation.ref}
                     initial="hidden"
                     animate={h1Animation.controls}
                     variants={h1Variants}
-                    className="hero-text font-bold">Your trusted partner in Technology, Marketing, and Business Management Excellence.</motion.h1> {/* Boost Your Online Presence with Digital Marketing Services*/}
+                    className="hero-text font-bold">Your trusted partner in <span className='text-blue-700'> Technology, Marketing, and Business Management Excellence.</span></motion.h1> {/* Boost Your Online Presence with Digital Marketing Services*/}
 
-                    <div className="flex flex-col gap-4 pr-[10%] sm:pr-[0%] lg:pr-[25%] text-black md:text-lg md:font-semibold">
+                    <div className="flex flex-col gap-4 pr-[10%] sm:pr-[0%] lg:pr-[20%] text-gray-700 text-lg md:text-xl font-bold">
                         <motion.p 
                         ref={text1Animation.ref}
                         animate={text1Animation.controls} 
@@ -76,16 +87,26 @@ const Hero = () => {
                     </div>
 
                     <div className="flex ">
-                        <motion.button
+                        <motion.div
                         ref={text2Animation.ref}
                         variants={buttonVariants}
-                        whileHover={{ scale: 1.1, boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)" }}
+                        // whileHover={{ scale: 1.1, boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)" }}
                         whileTap={{ scale: 0.9 }}
                         initial="hidden" 
                         animate={text2Animation.controls}
-                        className="bg-gray-800 hover:bg-gray-100 hover:text-gray-900 border-2 border-gray-800 text-gray-100 px-4 py-2 md:py-3 rounded-md shadow-2xl font-medium">
-                            <Link to="/contact">Get started</Link>
-                        </motion.button>
+                        >
+                            <button className="btn-17">
+                                <span className="text-container">
+                                    <span ><Link className="text" to="/contact">Get started</Link></span>
+                                </span>
+                            </button>
+                        </motion.div>
+                        {/* <button className="btn-17">
+                            <span className="text-container">
+                                <span className="text"><Link to="/contact">Get started</Link></span>
+                            </span>
+                        </button> */}
+
                     </div>
                 </div>
 

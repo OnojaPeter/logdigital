@@ -19,7 +19,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
         // >
             <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16">
                 <div className="flex justify-center">
-                    <span className="uppercase font-medium px-3 py-1 border  rounded-full">{sectionName}</span> {/* border-gray-800 */}
+                    <span className="uppercase font-bold px-3 py-1 border rounded-full">{sectionName}</span> {/* border-gray-800 */}
                 </div>
 
                 <div className=" flex flex-col gap-y-6 md:flex-row md:gap-2 lg:gap-10 mt-6 md:mt-14">
@@ -29,7 +29,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                             initial="hidden" 
                             animate={descriptionAnimation.controls} 
                             variants={descriptionAnimation.textVariants} 
-                            className="text-4xl font-bold mb-3 md:mb-8 capitalize">
+                            className={` text-4xl font-bold mb-3 md:mb-8 capitalize ${sectionName==="about us" && "text-black"}`}>
                                 {title}
                         </motion.h2>
                         {/* <h2 className="text-4xl font-bold mb-3 md:mb-8 capitalize">{title}</h2> */}
@@ -37,7 +37,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                             initial="hidden" 
                             animate={textAnimation.controls} 
                             variants={textAnimation.textVariants} 
-                            className="text-lg mb-3 md:mb-8 "
+                            className=" font-bold text-lg md:text-xl font-bold mb-3 md:mb-8 "
                         >
                             {description}
                         </motion.p>
@@ -46,7 +46,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                             initial="hidden" 
                             animate={moreTextAnimation.controls} 
                             variants={moreTextAnimation.textVariants} 
-                            className="text-lg mb-3 md:mb-8 "
+                            className="text-lg md:text-xl font-bold mb-3 md:mb-8 "
                         >
                             {moreDescription}
                         </motion.p>
@@ -59,7 +59,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                             variants={textAnimation.variants} 
                              key={index} className="flex items-center gap-2 my-2 md:my-4">
                                 <img className="h-10 w-10" src="/images/service-logo.png" alt="" />
-                                <p className="text-xl text-white capitalize">{text}</p>
+                                <p className="text-xl text-white capitalize font-semibold">{text}</p>
                             </motion.span>
                         ))}
 

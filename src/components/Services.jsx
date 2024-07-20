@@ -25,9 +25,9 @@ import {services} from "../Data";
           animate={sectionAnimation.controls} 
           variants={sectionAnimation.variants} 
            className="flex flex-col items-center md:text-center">
-            <span className="uppercase font-medium px-3 py-1 border border-gray-800 rounded-full ">our services</span>
+            <span className="uppercase font-bold px-3 py-1 border border-gray-800 rounded-full ">our services</span>
             <h2 className="text-4xl font-bold my-5 capitalize">elevate your digital presence today</h2>
-            <p className="text-lg mb-8 md:mx-24 lg:mx-40 text-gray-700">Lorem ipsum, dolor sit amet dolorem eligendi iusto harum beatae consectetur adipisicing elit. Sit odit, voluptas deleniti dolorem eligendi iusto harum beatae !</p>
+            <p className="text-lg md:text-xl mb-8 md:mx-24 lg:mx-40 font-bold text-gray-800">Lorem ipsum, dolor sit amet dolorem eligendi iusto harum beatae consectetur adipisicing elit. Sit odit, voluptas deleniti dolorem eligendi iusto harum beatae !</p>
           </motion.div>
 
           <motion.div 
@@ -56,7 +56,7 @@ import {services} from "../Data";
                     </div>
                     <div className="text-start">
                       <h3 className="text-xl font-bold lg:mb-2">{service.title}</h3>
-                      <p className="text-gray-800">{service.description}</p>
+                      <p className="text-gray-600 font-bold">{service.description}</p>
                     </div>
                   </div>
                 </motion.div>
