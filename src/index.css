@@ -461,13 +461,34 @@ background-size: cover;
     padding: 0.3rem;
   }
   .tab{
-    width: 80px;
+    width: 100px;
   }
   .glider{
-    width: 80px;
+    width: 100px;
   }
   .btn-18 {
-    padding: 0.3rem 1rem;
+    /* padding: 0.1rem 0.3rem; */
     font-weight: 500;
+  }
+  .btn-18 .text {
+    padding: 0.3rem 1rem;
+  }
+}
+
+@media (min-width:400px) and (max-width: 640px) {
+  .arrow{
+    /* display: none; */
+    right: 15%;
+  }
+}
+@media (min-width:350px) and (max-width: 399px) {
+  .arrow{
+    /* display: none; */
+    right: 5%;
+  }
+}
+@media (max-width: 349px) {
+  .arrow{
+    display: none;
   }
 }

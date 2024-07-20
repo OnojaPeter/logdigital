@@ -66,35 +66,35 @@ const Navbar = () => {
                 onChange={() => setSelectedTab('radio-3')}
               />
               <label className="tab" htmlFor="radio-3">
-              <div 
-                className="relative z-[999]" 
-                onMouseEnter={() => setIsServicesDropdownOpen(true)}
-                onMouseLeave={() => setIsServicesDropdownOpen(false)}
-              >
-                <div className='flex items-center'>
-                <span>Services </span>{isServicesDropdownOpen ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown /> }
-                </div>
-                
-                <div
-                  className={`absolute left-1/2 transform -translate-x-1/2 w-[250px] lg:w-[300px] bg-white rounded-md shadow-lg py-3 z-50 transition-opacity duration-300 ease-in-out ${
-                    isServicesDropdownOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
-                  }`}
+                <div 
+                  className="relative z-[999]" 
+                  onMouseEnter={() => setIsServicesDropdownOpen(true)}
+                  onMouseLeave={() => setIsServicesDropdownOpen(false)}
                 >
-                  <div className=" flex flex-col">
-                    {servicesDetail.map((service) => (
-                      <Link 
-                        key={service.id} 
-                        to={service.path}
-                        onClick={() => setIsServicesDropdownOpen(false)}
-                        
-                        className="rounded-md mx-4 py-2 text-gray-800 hover:text-white hover:bg-blue-400 text-center"
-                      >
-                        <p onClick={() => setSelectedTab('radio-3')}>{service.name}</p>
-                      </Link>
-                    ))}
+                  <div className='flex items-center'>
+                  <span>Services </span>{isServicesDropdownOpen ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown /> }
+                  </div>
+                  
+                  <div
+                    className={`absolute left-1/2 transform -translate-x-1/2 w-[250px] lg:w-[300px] bg-white rounded-md shadow-lg py-3 z-50 transition-opacity duration-300 ease-in-out ${
+                      isServicesDropdownOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                    }`}
+                  >
+                    <div className=" flex flex-col">
+                      {servicesDetail.map((service) => (
+                        <Link 
+                          key={service.id} 
+                          to={service.path}
+                          onClick={() => setIsServicesDropdownOpen(false)}
+                          
+                          className="rounded-md mx-4 py-2 text-gray-800 hover:text-white hover:bg-blue-400 text-center"
+                        >
+                          <p onClick={() => setSelectedTab('radio-3')}>{service.name}</p>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
               </label>
 
               <input
@@ -148,24 +148,24 @@ const Navbar = () => {
             </svg>
           </button>
           <nav className=" p-4 text-center flex items-center justify-center h-full">
-            <div className='flex flex-col justify-between h-[60vh] w-full'>
-              <Link onClick={() => setIsMobileMenuOpen(false)}  to="/" className="text-6xl font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100">
+            <div className='flex flex-col space-y-6 h-[100vh] w-full overflow-auto overscroll-contain'>
+              <Link onClick={() => setIsMobileMenuOpen(false)}  to="/" className="text-5xl font-bold block px-4 text-gray-700 hover:bg-gray-100">
                 Home
               </Link>
-              <Link onClick={() => setIsMobileMenuOpen(false)} to="/about" className="text-6xl font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100">
+              <Link onClick={() => setIsMobileMenuOpen(false)} to="/about" className="text-5xl font-bold block px-4 text-gray-700 hover:bg-gray-100">
                 About
               </Link>
 
               <div className="relative">
                 <a 
                   href="#" 
-                  className="relative text-6xl font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  className="relative text-5xl font-bold block px-4 py-1 text-gray-700 hover:bg-gray-100"
                   onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
                 >
-                  <span >Services </span>{isServicesDropdownOpen ? <MdKeyboardArrowUp className='absolute top-3 right-4 sm:right-32 ' /> : <MdKeyboardArrowDown className='absolute top-3 right-4 sm:right-32' /> }
+                  <span >Services </span>{isServicesDropdownOpen ? <MdKeyboardArrowUp className='absolute top-3  sm:right-40 arrow' /> : <MdKeyboardArrowDown className='absolute top-3  sm:right-40 arrow' /> }
                 </a> 
                 <div
-                  className={`absolute inset-x-0 transition-opacity duration-300 ease-in-out ${
+                  className={`relative inset-x-0 transition-opacity duration-300 ease-in-out ${
                     isServicesDropdownOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
                   }`}
                 >
@@ -177,7 +177,7 @@ const Navbar = () => {
                             key={service.id} 
                             to={service.path}
                             onClick={() => setIsMobileMenuOpen(false)}
-                            className="px-4 py-2 text-gray-800 my-1 hover:text-white hover:bg-gray-900 text-center text-3xl font-medium"
+                            className="px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-900 text-center text-2xl font-medium border-b-2 border-gray-400"
                           >
                             {service.name}
                           </Link>
@@ -188,7 +188,7 @@ const Navbar = () => {
                 </div>
               </div>
         
-              <Link onClick={() => setIsMobileMenuOpen(false)} to="/contact" className="text-6xl font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100 ">
+              <Link onClick={() => setIsMobileMenuOpen(false)} to="/contact" className="text-5xl font-bold block px-4  text-gray-700 hover:bg-gray-100 ">
                 Contact us
               </Link>
             </div>
