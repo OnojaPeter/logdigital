@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import Navlink from './Navlink';
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { servicesDetail } from '../Data';
 
 const Navbar = () => {
@@ -70,7 +71,10 @@ const Navbar = () => {
                 onMouseEnter={() => setIsServicesDropdownOpen(true)}
                 onMouseLeave={() => setIsServicesDropdownOpen(false)}
               >
-                Services
+                <div className='flex items-center'>
+                <span>Services </span>{isServicesDropdownOpen ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown /> }
+                </div>
+                
                 <div
                   className={`absolute left-1/2 transform -translate-x-1/2 w-[250px] lg:w-[300px] bg-white rounded-md shadow-lg py-3 z-50 transition-opacity duration-300 ease-in-out ${
                     isServicesDropdownOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
@@ -120,7 +124,7 @@ const Navbar = () => {
 
         <div className='md:hidden block cursor-pointer'>
           <button onClick={()=>{setIsMobileMenuOpen(!isMobileMenuOpen)}} >
-            <FaBarsStaggered className='text-blue-900 text-2xl' />
+            <FaBarsStaggered className='text-blue-900 text-3xl' />
           </button>
         </div>
         
@@ -129,65 +133,65 @@ const Navbar = () => {
       <div
         className={`fixed inset-y-0 right-0 transform transition-transform duration-300 ease-in-out ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        } bg-white shadow-lg md:hidden w-3/4 max-w-sm z-50`}
+        } bg-white shadow-lg md:hidden w-full z-50`}
       >
-        <div className="flex flex-col h-full">
+        {/* gradient */}
+        <div className='w-full h-full bg-white left-0 absolute top-0  bg-gradient-to-t from-white via-gray-200 to-blue-200'></div>
+
+        <div className="flex flex-col h-full relative z-50">
           <button
-            className="self-end p-4"
+            className="self-end p-4 text-blue-900"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 22 22" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          <nav className="flex-grow p-4">
-            <Link onClick={() => setIsMobileMenuOpen(false)}  to="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-              Home
-            </Link>
-            <Link onClick={() => setIsMobileMenuOpen(false)} to="/about" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-              About
-            </Link>
+          <nav className=" p-4 text-center flex items-center justify-center h-full">
+            <div className='flex flex-col justify-between h-[60vh] w-full'>
+              <Link onClick={() => setIsMobileMenuOpen(false)}  to="/" className="text-6xl font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                Home
+              </Link>
+              <Link onClick={() => setIsMobileMenuOpen(false)} to="/about" className="text-6xl font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                About
+              </Link>
 
-            <div className="relative">
-              <a 
-                href="#" 
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
-              >
-                Services
-              </a>
-              <div
-                className={`transition-opacity duration-300 ease-in-out ${
-                  isServicesDropdownOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
-                }`}
-              >
-                {isServicesDropdownOpen && (
-                  <div className="mt-2 bg-blue-100 rounded-md shadow-lg py-2 z-20">
-                    <div className="flex flex-col">
-                      {servicesDetail.map((service) => (
-                        <Link 
-                          key={service.id} 
-                          to={service.path}
-                          onClick={() => setIsMobileMenuOpen(false)}
-                          className="px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-900 text-center"
-                        >
-                          {service.name}
-                        </Link>
-                        // <a 
-                        //   key={index} 
-                        //   href="#" 
-                        //   className="w-1/2 px-4 py-2 text-gray-800 hover:bg-gray-100"
-                        // >
-                        //   {service}
-                        // </a>
-                      ))}
+              <div className="relative">
+                <a 
+                  href="#" 
+                  className="relative text-6xl font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
+                >
+                  <span >Services </span>{isServicesDropdownOpen ? <MdKeyboardArrowUp className='absolute top-3 right-4 sm:right-32 ' /> : <MdKeyboardArrowDown className='absolute top-3 right-4 sm:right-32' /> }
+                </a> 
+                <div
+                  className={`absolute inset-x-0 transition-opacity duration-300 ease-in-out ${
+                    isServicesDropdownOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                  }`}
+                >
+                  {isServicesDropdownOpen && (
+                    <div className="mt-2 bg-blue-100 rounded-md shadow-lg py-2 z-20">
+                      <div className="flex flex-col">
+                        {servicesDetail.map((service) => (
+                          <Link 
+                            key={service.id} 
+                            to={service.path}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="px-4 py-2 text-gray-800 my-1 hover:text-white hover:bg-gray-900 text-center text-3xl font-medium"
+                          >
+                            {service.name}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
+        
+              <Link onClick={() => setIsMobileMenuOpen(false)} to="/contact" className="text-6xl font-bold block px-4 py-2 text-gray-700 hover:bg-gray-100 ">
+                Contact us
+              </Link>
             </div>
-      
-            <Link onClick={() => setIsMobileMenuOpen(false)} to="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</Link>
           </nav>
         </div>
       </div>
