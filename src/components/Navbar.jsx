@@ -6,11 +6,26 @@ import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { servicesDetail } from '../Data';
 
+import { motion } from 'framer-motion';
+
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
   const [selectedTab, setSelectedTab] = useState('radio-1');
   const gliderRef = useRef(null);
+
+  const linkVariants = {
+    hidden: { opacity: 0, x: 80 },
+    visible: (i) => ({
+        opacity: 1,
+        x: 0,
+        transition: {
+            delay: i * 0.2,
+            duration: 0.3,
+            ease: 'easeInOut'
+        }
+    })
+};
 
   const updateGliderPosition = () => {
     const activeLabel = document.querySelector(`label[htmlFor=${selectedTab}]`);
@@ -131,7 +146,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`fixed inset-y-0 right-0 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-y-0 right-0 transform transition-transform duration-500 ease-in-out ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         } bg-white shadow-lg md:hidden w-full z-50`}
       >
@@ -148,8 +163,62 @@ const Navbar = () => {
             </svg>
           </button>
           <nav className=" p-4 text-center flex items-center justify-center h-full">
-            <div className='flex flex-col mt-32 space-y-6 h-[100vh] w-full overflow-auto overscroll-contain'>
-              <Link onClick={() => setIsMobileMenuOpen(false)}  to="/" className="text-5xl font-bold block px-4 text-gray-700 hover:bg-gray-100">
+            <div className='flex flex-col mt-32 space-y-6 h-[100vh] w-full overflow-auto overscroll-contain '>
+            {['Home', 'About', 'Services', 'Contact'].map((item, index) => (
+                                <motion.div
+                                    key={index}
+                                    custom={index}
+                                    initial="hidden"
+                                    animate={isMobileMenuOpen ? "visible" : "hidden"}
+                                    variants={linkVariants}
+                                >
+                                  
+
+                                  {item==="Services" ?
+                                    <div className="relative">
+                                      <a 
+                                        href="#" 
+                                        className="relative text-5xl font-bold block px-4 py-1 text-gray-700 hover:bg-gray-100"
+                                        onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
+                                      >
+                                        <span >Services </span>{isServicesDropdownOpen ? <MdKeyboardArrowUp className='absolute top-2  sm:right-40 arrow' /> : <MdKeyboardArrowDown className='absolute top-2  sm:right-40 arrow' /> }
+                                      </a> 
+                                      <div
+                                        className={`relative inset-x-0 transition-opacity duration-300 ease-in-out ${
+                                          isServicesDropdownOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                                        }`}
+                                      >
+                                        {isServicesDropdownOpen && (
+                                          <div className="mt-2 bg-blue-100 rounded-md shadow-lg py-2 z-20">
+                                            <div className="flex flex-col">
+                                              {servicesDetail.map((service) => (
+                                                <Link 
+                                                  key={service.id} 
+                                                  to={service.path}
+                                                  onClick={() => setIsMobileMenuOpen(false)}
+                                                  className="px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-900 text-center text-2xl font-medium "
+                                                >
+                                                  {service.name}
+                                                </Link>
+                                              ))}
+                                            </div>
+                                          </div>
+                                        )}
+                                      </div>
+                                    </div>
+                                  : 
+                                    <Link
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                        to={`/${item.toLowerCase()}`}
+                                        className="text-5xl font-bold block px-4 text-gray-700 hover:bg-gray-100"
+                                    >
+                                        {item}
+                                    </Link>
+                                  }
+                                    
+                                </motion.div>
+                            ))}
+              {/* <Link onClick={() => setIsMobileMenuOpen(false)}  to="/" className="text-5xl font-bold block px-4 text-gray-700 hover:bg-gray-100">
                 Home
               </Link>
               <Link onClick={() => setIsMobileMenuOpen(false)} to="/about" className="text-5xl font-bold block px-4 text-gray-700 hover:bg-gray-100">
@@ -190,7 +259,7 @@ const Navbar = () => {
         
               <Link onClick={() => setIsMobileMenuOpen(false)} to="/contact" className="text-5xl font-bold block px-4  text-gray-700 hover:bg-gray-100 ">
                 Contact us
-              </Link>
+              </Link> */}
             </div>
           </nav>
         </div>
