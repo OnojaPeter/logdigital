@@ -17,11 +17,15 @@ const Hero = () => {
         autoplaySpeed: 6000,
     };
     const images = [
-        "/images/hero-pic.avif",
+        // "/images/hero-pic.avif",
         // "/images/media-marketing.jpg",
         // "/images/marketing-branding.jpg",
         // "/images/marketing_2.jpg",
-        "/images/socials-transp.png"
+        "/images/slide2.png",
+        "/images/slide3.png",
+        // "/images/slide4.png",
+        "/images/slide5.png",
+        "/images/slide7.png"
     ];
 
     const imageAnimation = useScrollAnimation();
@@ -109,11 +113,11 @@ const Hero = () => {
                 initial="hidden"
                 animate={imageAnimation.controls}
                 variants={imageAnimation.imageVariants}
-                className="md:w-[50%] w-full  md:rounded-2xl overflow-hidden shadow-2xl h-[250px] md:h-[400px]">
+                className="md:w-[50%] w-full  md:rounded-2xl overflow-hidden  h-[350px] md:h-[450px]">
                     <Slider {...settings}>
                         {images.map((src, index) => (
                         <div key={index}>
-                            <img src={src} alt={`Slide ${index}`} className="w-full h-[250px] md:h-[400px]  object-cover " />
+                            <img src={src} alt={`Slide ${index}`} className="w-full h-[350px] md:h-[450px]  object-cover " />
                         </div>
                         ))}
                     </Slider>

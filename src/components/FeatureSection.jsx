@@ -16,7 +16,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                 <span className="uppercase font-bold px-3 py-1 border rounded-full">{sectionName}</span>
             </div>
 
-            <div className="flex flex-col gap-y-6 md:flex-row md:gap-2 lg:gap-10 mt-6 md:mt-14">
+            <div className="flex flex-col gap-y-6 md:flex-row md:gap-2 lg:gap-10 mt-6 md:mt-0 items-center">
                 <div className="md:w-[50%]">
                     <motion.h2
                         ref={titleAnimation.ref}
@@ -82,13 +82,13 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                     <div className="flex justify-center md:w-[50%] relative">
                         <motion.img
                             src={imageSrc}
-                            alt=""
+                            alt="storyset.com/"
                             ref={imageAnimation.ref}
                             initial="hidden"
                             animate={imageAnimation.controls}
                             variants={imageAnimation.imageVariants}
-                            className="rounded-lg  object-cover h-[250px] md:h-[400px] w-full"
-                        />
+                            className="rounded-lg  object-cover w-full"
+                        /> {/*h-[250px] md:h-[400px]*/}
                     </div>
                 }
             </div>
