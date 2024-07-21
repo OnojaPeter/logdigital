@@ -87,7 +87,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                             initial="hidden"
                             animate={imageAnimation.controls}
                             variants={imageAnimation.imageVariants}
-                            className="rounded-lg shadow-lg object-cover h-[250px] md:h-[400px] w-full"
+                            className="rounded-lg  object-cover h-[250px] md:h-[400px] w-full"
                         />
                     </div>
                 }

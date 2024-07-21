@@ -1,5 +1,5 @@
 import { BsTwitterX } from "react-icons/bs";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn  } from "react-icons/fa";
 import { MdPhoneInTalk, MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import Navlink from "./Navlink";
@@ -26,6 +26,7 @@ function Footer() {
                                 <a href="#home" className="flex gap-2"><BsTwitterX className="text-2xl" /><p className="hidden sm:block">X (Formally twitter)</p></a>
                                 <a href="#home" className="flex gap-2"><FaFacebookF className="text-2xl" /><p className="hidden sm:block">Facebook</p></a>
                                 <a href="#home" className="flex gap-2"><FaInstagram className="text-2xl" /><p className="hidden sm:block">Instagram</p></a>
+                                <a href="#home" className="flex gap-2"><FaLinkedinIn className="text-2xl" /><p className="hidden sm:block">LinkedIn</p></a>
                             </ul>
                         </div>
 

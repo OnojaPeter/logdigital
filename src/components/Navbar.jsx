@@ -209,7 +209,7 @@ const Navbar = () => {
                                   : 
                                     <Link
                                         onClick={() => setIsMobileMenuOpen(false)}
-                                        to={`/${item.toLowerCase()}`}
+                                        to={item==="Home" ? "/" : `/${item.toLowerCase()}`}
                                         className="text-5xl font-bold block px-4 text-gray-700 hover:bg-gray-100"
                                     >
                                         {item}
