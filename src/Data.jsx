@@ -29,6 +29,7 @@ const servicesDetail = [
   {
     id: 1,
     name: "Marketing & Advertising",
+    shortDescription: "We offer an extensive range of market and advertising services designed to elevate your brand, enhance your market presence, and drive business growth. ",
     description:
       "At LOG DIGITAL Marketing & Advertising, we offer an extensive range of market and advertising services designed to elevate your brand, enhance your market presence, and drive business growth. With a decade of expertise and a team of dedicated professionals, we tailor our services to meet the unique needs of each client, ensuring effective and impactful marketing strategies.",
     services: [
@@ -139,20 +140,20 @@ const servicesDetail = [
         ],
       },
       {
-        service: "Media Planning and Buying",
+        service: "Media Planning",
         description:
-          "Maximize your advertising budget with strategic media planning and buying services.",
+          "Maximize your advertising budget with strategic media planning services.",
         subService: [
           {
             name: "Television and Radio Advertising",
             description: "Create and place ads on TV and radio channels.",
           },
           {
-            name: "Print Media Buying",
+            name: "Print Media",
             description:
               "Advertise in newspapers, magazines, and other print media.",
           },
-          { name: "Digital Media Buying", description: "Digital Media Buying" },
+          { name: "Digital Media", description: "Digital Media" },
           {
             name: "Out-of-Home (OOH) Advertising",
             description:
@@ -208,9 +209,10 @@ const servicesDetail = [
   },
   {
     id: 2,
-    name: "Tech Services",
+    name: "Technology Services",
+    shortDescription: "Our tech services encompass everything from IT support and network management to advanced cybersecurity and cloud solutions. ",
     description:
-      "At LOG DIGITAL, we are at the forefront of technological innovation, offering a comprehensive suite of tech services designed to empower businesses and streamline operations. Our expert team of IT professionals is dedicated to providing cutting-edge solutions that cater to the diverse needs of our clients, ensuring they stay competitive in an ever-evolving digital landscape. Our tech services encompass everything from IT support and network management to advanced cybersecurity and cloud solutions. Whether you’re looking to optimize your current infrastructure, enhance your cybersecurity measures, or leverage the power of cloud computing, LOG DIGITAL has the expertise and resources to help you achieve your goals. By partnering with LOG DIGITAL, you gain access to state-of-the-art technology and personalized service that drives efficiency, security, and innovation. Let us help you navigate the complexities of the digital world and take your business to the next level.",
+      "At LOG DIGITAL, we are at the forefront of technological innovation, offering a comprehensive suite of tech services designed to empower businesses and streamline operations. Our expert team of IT professionals is dedicated to providing cutting-edge solutions that cater to the diverse needs of our clients, ensuring they stay competitive in an ever-evolving digital landscape.",
     services: [
       {
         service: "Network Management ",
@@ -296,32 +298,35 @@ const servicesDetail = [
           "At LOG DIGITAL, we offer comprehensive IT consulting services designed to help businesses navigate the complex landscape of technology and maximize their IT investments. With our team of experienced consultants, we provide strategic guidance, innovative solutions, and expert advice tailored to meet the unique needs of each client. Our IT consulting services cover a wide range of areas, including:",
         subService: [
           {
-            name: "Technology Strategy and Planning",
-            description:
-              "We work closely with clients to develop customized technology strategies aligned with their business goals. Our consultants assess current IT infrastructure, identify areas for improvement, and develop roadmaps for future growth.",
-          },
-          {
-            name: "Digital Transformation",
-            description:
-              "In today's rapidly evolving digital landscape, businesses need to adapt quickly to stay competitive. We help clients embrace digital transformation by leveraging emerging technologies, streamlining processes, and enhancing customer experiences.",
-          },
-          {
-            name: "IT Infrastructure Optimization",
-            description:
-              "Our consultants analyze existing IT infrastructure to identify inefficiencies and opportunities for optimization. Whether it's upgrading hardware, migrating to the cloud, or implementing virtualization solutions, we help clients maximize the performance and reliability of their IT systems.",
-          },
-          {
             name: "Cybersecurity and Risk Management",
             description: "Protecting sensitive data and ensuring regulatory compliance are top priorities for businesses. We assess cybersecurity risks, develop comprehensive security strategies, and implement robust defense mechanisms to safeguard against cyber threats.",
+          },
+          {
+            name: "Data protection"
           },
           {
             name: "Software Development and Integration",
             description: "From custom software development to integrating third-party applications, we help clients leverage technology to streamline operations and drive innovation. Our consultants work closely with clients to understand their unique requirements and deliver tailored software solutions.",
           },
           {
+            name: "Technology Strategy and Planning",
+            description:
+              "We work closely with clients to develop customized technology strategies aligned with their business goals. Our consultants assess current IT infrastructure, identify areas for improvement, and develop roadmaps for future growth.",
+          },
+          {
             name: "Project Management and Implementation",
             description: "Successful IT projects require careful planning, execution, and management. Our experienced project managers oversee every stage of the project lifecycle, ensuring projects are delivered on time, within budget, and according to specifications.",
+          },          
+          {
+            name: "IT Infrastructure Optimization",
+            description:
+              "Our consultants analyze existing IT infrastructure to identify inefficiencies and opportunities for optimization. Whether it's upgrading hardware, migrating to the cloud, or implementing virtualization solutions, we help clients maximize the performance and reliability of their IT systems.",
           },
+          {
+            name: "Digital Transformation",
+            description:
+              "In today's rapidly evolving digital landscape, businesses need to adapt quickly to stay competitive. We help clients embrace digital transformation by leveraging emerging technologies, streamlining processes, and enhancing customer experiences.",
+          },         
           {
             name: "Training and Change Management",
             description: "Adopting new technologies often requires changes in organizational culture and processes. We provide training and change management services to help clients navigate transitions smoothly and ensure the successful adoption of new technologies.",
@@ -334,7 +339,8 @@ const servicesDetail = [
   },
   {
     id: 3,
-    name: "Management service",
+    name: "Management services",
+    shortDescription: "With a commitment to excellence, and a focus on maximizing value for our clients, we offer a range of management services tailored to meet their unique needs.",
     description: "LOG DIGITAL is a leading management services company dedicated to providing comprehensive solutions for property owners seeking professional management of their event centres, gardens, halls, and short-term rental apartments. With a commitment to excellence, attention to detail, and a focus on maximizing value for our clients, we offer a range of management services tailored to meet their unique needs and objectives. ",
     services: [
       {
@@ -369,6 +375,7 @@ const servicesDetail = [
   {
     id: 4,
     name: "Outsourcing (BPO)",
+    shortDescription: "We leverage cutting-edge technology, industry best practices, and a global talent pool to deliver superior BPO services that drive business success. ",
     description: "LOG DIGITAL is a premier Business Process Outsourcing (BPO) company dedicated to providing exceptional outsourcing solutions to businesses worldwide. With a focus on efficiency, quality, and cost-effectiveness, we specialize in delivering a wide range of BPO services tailored to meet the unique needs and objectives of our clients. ",
     services: [
       {

@@ -148,7 +148,7 @@ const Navbar = () => {
             </svg>
           </button>
           <nav className=" p-4 text-center flex items-center justify-center h-full">
-            <div className='flex flex-col mt-20 space-y-6 h-[100vh] w-full overflow-auto overscroll-contain'>
+            <div className='flex flex-col mt-32 space-y-6 h-[100vh] w-full overflow-auto overscroll-contain'>
               <Link onClick={() => setIsMobileMenuOpen(false)}  to="/" className="text-5xl font-bold block px-4 text-gray-700 hover:bg-gray-100">
                 Home
               </Link>

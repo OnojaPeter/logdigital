@@ -6,7 +6,7 @@ const useScrollAnimation = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true, //false if i want continous trigger
-    threshold: 0.3, 
+    threshold: 0.2, 
   });
 
   useEffect(() => {

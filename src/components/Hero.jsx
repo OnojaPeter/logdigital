@@ -14,13 +14,13 @@ const Hero = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 6000,
     };
     const images = [
         "/images/hero-pic.avif",
-        "/images/media-marketing.jpg",
-        "/images/marketing-branding.jpg",
-        "/images/marketing_2.jpg",
+        // "/images/media-marketing.jpg",
+        // "/images/marketing-branding.jpg",
+        // "/images/marketing_2.jpg",
         "/images/socials-transp.png"
     ];
 
@@ -48,7 +48,7 @@ const Hero = () => {
       };
 
     return (
-        <section className="pt-10 mb-10 md:mb-0 md:py-20  bg-blue-100 relative  ">{/* pt-5 svgBackground */}
+        <section className="pt-10 mb-10 md:mb-0 md:py-10  bg-blue-100 relative  ">{/* pt-5 svgBackground */}
             <div className='w-full h-full bg-white left-0 absolute top-0  bg-gradient-to-t from-white via-gray-200 to-blue-200'></div>
             {/* <div className='w-full'>
                 <div className='w-[50%] h-full bg-white left-0 absolute top-0 z-50 bg-gradient-to-t from-white via-gray-500 to-green-500'></div>
@@ -101,12 +101,6 @@ const Hero = () => {
                                 </span>
                             </button>
                         </motion.div>
-                        {/* <button className="btn-17">
-                            <span className="text-container">
-                                <span className="text"><Link to="/contact">Get started</Link></span>
-                            </span>
-                        </button> */}
-
                     </div>
                 </div>
 
@@ -116,7 +110,6 @@ const Hero = () => {
                 animate={imageAnimation.controls}
                 variants={imageAnimation.imageVariants}
                 className="md:w-[50%] w-full  md:rounded-2xl overflow-hidden shadow-2xl h-[250px] md:h-[400px]">
-                    {/* <img className="w-full h-[250px] md:h-[400px]  object-cover " src="/images/hero-pic.avif" alt="" /> */}
                     <Slider {...settings}>
                         {images.map((src, index) => (
                         <div key={index}>

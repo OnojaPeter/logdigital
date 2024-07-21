@@ -39,13 +39,13 @@ function ServiceDetail() {
                         </div>
                     ))}
                     {service.name === "Tech Services" && 
-                        <p className='font-bold text-gray-800 text-xl'>We are committed to delivering exceptional value and tangible results to our clients. Whether you're a small startup or a large enterprise, we have the expertise and resources to support your IT needs and drive your business forward.</p>
+                        <p className='font-bold text-gray-800 text-lg'>We are committed to delivering exceptional value and tangible results to our clients. Whether you're a small startup or a large enterprise, we have the expertise and resources to support your IT needs and drive your business forward.</p>
                     }
                     {service.name === "Management service" &&
-                        <p className='font-bold text-gray-800 text-xl'>At LOG DIGITAL, we understand the unique challenges and opportunities associated with managing event centers, gardens, halls, and short-term rental properties. With our expertise, professionalism, and dedication to customer satisfaction, we help property owners maximize the value of their investments while providing exceptional experiences for their clients and guests. Partner with LOG DIGITAL for expert management services that deliver results.</p>
+                        <p className='font-bold text-gray-800 text-lg'>At LOG DIGITAL, we understand the unique challenges and opportunities associated with managing event centers, gardens, halls, and short-term rental properties. With our expertise, professionalism, and dedication to customer satisfaction, we help property owners maximize the value of their investments while providing exceptional experiences for their clients and guests. Partner with LOG DIGITAL for expert management services that deliver results.</p>
                     }
                     {service.name === "Outsourcing (BPO)" &&
-                        <p className='font-bold text-gray-800 text-xl'>At LOG DIGITAL, we leverage cutting-edge technology, industry best practices, and a global talent pool to deliver superior BPO services that drive business success. Our dedicated team is committed to delivering exceptional results, fostering long-term partnerships, and helping our clients achieve their strategic objectives.</p>
+                        <p className='font-bold text-gray-800 text-lg'>At LOG DIGITAL, we leverage cutting-edge technology, industry best practices, and a global talent pool to deliver superior BPO services that drive business success. Our dedicated team is committed to delivering exceptional results, fostering long-term partnerships, and helping our clients achieve their strategic objectives.</p>
                     }
                     
                 </div>
