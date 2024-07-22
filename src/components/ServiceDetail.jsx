@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { servicesDetail } from '../Data';
+import { LuArrowBigRightDash } from "react-icons/lu";
 
 function ServiceDetail() {
   const { id } = useParams();
@@ -29,9 +30,10 @@ function ServiceDetail() {
 
                             <div className='space-y-2 pl-5 border-l-2 border-blue-300'>
                                 {s.subService && s.subService.map(( s , index) => (
-                                    <div className=' flex flex-col gap-1 items-start' key={index}>
-                                        <h3 className='font-medium text-lg'>{s.name}:</h3>
-                                        <p className='text-gray-600'>{s.description}</p>
+                                    <div className=' flex  gap-1 items-center' key={index}>
+                                        <LuArrowBigRightDash />
+                                        <h3 className='font-medium text-lg'>{s.name}</h3>
+                                        {/* <p className='text-gray-600'>{s.description}</p> */}
                                     </div>
                                 ))}
                             </div>
