@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 import { Link } from 'react-router-dom';
+import { LuArrowBigRightDash } from "react-icons/lu";
 
 const FeatureSection = ({ sectionName, title, description, moreDescription, buttonText, imageSrc, extraText, link }) => {
     const titleAnimation = useScrollAnimation();
@@ -23,7 +24,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                         initial="hidden"
                         animate={titleAnimation.controls}
                         variants={titleAnimation.textVariants}
-                        className={`text-4xl font-bold mb-3 md:mb-8 capitalize ${sectionName === "about us" && "text-black"}`}
+                        className={`text-4xl md:text-5xl font-bold mb-3 md:mb-8 capitalize ${sectionName === "about us" && "text-black"}`}
                     >
                         {title}
                     </motion.h2>
@@ -58,7 +59,8 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                                     className="flex items-center gap-2 my-2 md:my-4"
                                 >
                                     <img className="h-10 w-10" src="/images/service-logo.png" alt="" />
-                                    <p className="text-xl text-white capitalize font-semibold">{text}</p>
+                                    {/* <LuArrowBigRightDash className='h-10 w-10' /> */}
+                                    <p className="text-lg text-white capitalize font-bold">{text}</p>
                                 </motion.span>
                             ))}
                         </div>
@@ -72,9 +74,9 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                             whileTap={{ scale: 0.9 }}
                             initial="hidden"
                             animate={buttonAnimation.controls}
-                            className="bg-[#7b57ff] text-white px-6 py-3 rounded"
+                            className=" text-white font-medium"
                         >
-                            <Link to={link}>{buttonText}</Link>
+                            <Link className='px-6 py-3 bg-[#7b57ff] rounded-md' to={link}>{buttonText}</Link>
                         </motion.button>
                     }
                 </div>

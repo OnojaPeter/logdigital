@@ -2,12 +2,11 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaFacebookF, FaInstagram, FaLinkedinIn  } from "react-icons/fa";
 import { MdPhoneInTalk, MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
-import Navlink from "./Navlink";
 
 function Footer() {
     return (
         <>
-            <footer className="bg-gray-800 text-white pt-10 sm:pt-20 pb-5">
+            <footer className="bg-gray-800 text-white pt-10 sm:pt-20 pb-10">
                 <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16  ">
                     <div className="flex justify-between flex-col sm:flex-row gap-y-8  text-lg font-medium">
                         <div className="flex flex-col gap-4 sm:gap-7">
@@ -40,12 +39,6 @@ function Footer() {
                             </ul>
                         </div>
                     </div>
-
-                    <div className="border-b-2 border-gray-600 w-full mt-10 mb-5"></div>
-
-                    <ul className="flex justify-between sm:justify-start sm:gap-3 md:gap-6">
-                        <Navlink />
-                    </ul>
                 </div>
             </footer>
         </>

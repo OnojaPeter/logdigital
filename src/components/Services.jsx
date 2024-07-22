@@ -35,7 +35,7 @@ import { Link } from 'react-router-dom';
             <span className="uppercase font-bold px-3 py-1 border-2 border-gray-800 rounded-full ">our services</span>
             <h2 className="text-4xl font-bold my-5 capitalize">elevate your digital presence today</h2>
             <p className="text-lg md:text-center md:text-xl  md:mx-10 lg:mx-10 font-bold text-gray-800">
-              In the bustling landscape of digital innovation, LogDigital emerges as a pioneering force, seamlessly integrating technology, marketing prowess, and bsuiness developement expertise. Founded on the principles of innovation and client-centric solutions, LogDigital has carved a niche for itself at the intersection of cutting edge technology and strategic business growth
+              In the bustling landscape of digital innovation, LogDigital emerges as a pioneering force, seamlessly integrating technology, marketing prowess, and business development expertise. Founded on the principles of innovation and client-centric solutions, LogDigital has carved a niche for itself at the intersection of cutting edge technology and strategic business growth
             </p>
           </motion.div>
 
@@ -58,7 +58,7 @@ import { Link } from 'react-router-dom';
                 className="card rounded-lg w-full sm:w-[48%] lg:w-[24%] relative shadow-lg">
                   <p className="cardHeading">{service.name}</p>
                   <p className="cardDescription">{service.shortDescription}</p>
-                  <button className="learnMoreButton rounded-lg"><Link to={service.path}>Learn more</Link></button>
+                  <button ><Link className="learnMoreButton rounded-lg" to={service.path}>Learn more</Link></button>
                 </motion.div>)}
 
               )}

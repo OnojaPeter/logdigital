@@ -1,5 +1,11 @@
 import FeatureSection from "./FeatureSection";
-const peter = [ "results-driven approach", "Social Media expertise in multiple platforms", "continuous optimization"]
+const peter = [ 
+  "Our skilled professionals bring years of experience and industry knowledge to your business.", 
+  "We offer cutting-edge strategies tailored to your unique needs.", 
+  "Our track record of success speaks for itself, with countless satisfied clients.",
+  "We prioritize your goals and work closely with you to achieve them.",
+  // "From technology to marketing to management, we provide a full spectrum of services for holistic growth."
+]
 const ChooseUs = () => {
   return (
     <section className="text-white py-8 chooseUsBg">
@@ -7,7 +13,7 @@ const ChooseUs = () => {
         <FeatureSection
             sectionName="why choose us"
             title="choose us to grow your business"
-            description="Et et id laoreet ultricies elementum venenatis ornare. Sollicitudin mauris id aliquet magna adipiscing. ut accumsan."
+            description="Partner with us for unparalleled expertise, innovation, and commitment to your business success."
             extraText={peter}
             imageSrc="/images/choose.png"
       />
