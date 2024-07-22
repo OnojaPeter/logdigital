@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ServiceDetail from "./components/ServiceDetail";
 import Service from "./pages/Service";
+import ScrollToTopButton from "./components/ScrollTop";
 
 function App() {
 
@@ -24,8 +25,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services/:id" element={<Service />} />
-          {/* Add more routes as needed */}
         </Routes>
+        <ScrollToTopButton />
         <Footer />
       </div>
     </Router>

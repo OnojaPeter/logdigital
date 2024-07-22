@@ -5,6 +5,9 @@
 .hero-text {
     font-size: 3rem;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 @media (max-width:640px) {
     .hero-text {
