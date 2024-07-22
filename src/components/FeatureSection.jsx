@@ -74,9 +74,9 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                             whileTap={{ scale: 0.9 }}
                             initial="hidden"
                             animate={buttonAnimation.controls}
-                            className=" text-white font-medium"
+                            className=" text-white font-medium px-6 py-3 bg-[#7b57ff] rounded-md"
                         >
-                            <Link className='px-6 py-3 bg-[#7b57ff] rounded-md' to={link}>{buttonText}</Link>
+                            <Link to={link}>{buttonText}</Link>
                         </motion.button>
                     }
                 </div>

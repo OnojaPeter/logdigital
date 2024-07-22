@@ -58,7 +58,7 @@ import { Link } from 'react-router-dom';
                 className="card rounded-lg w-full sm:w-[48%] lg:w-[24%] relative shadow-lg">
                   <p className="cardHeading">{service.name}</p>
                   <p className="cardDescription">{service.shortDescription}</p>
-                  <button ><Link className="learnMoreButton rounded-lg" to={service.path}>Learn more</Link></button>
+                  <button className="learnMoreButton rounded-lg"><Link to={service.path}>Learn more</Link></button>
                 </motion.div>)}
 
               )}

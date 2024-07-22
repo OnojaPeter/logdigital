@@ -9,10 +9,27 @@ import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
   const [selectedTab, setSelectedTab] = useState('radio-1');
   const gliderRef = useRef(null);
 
+  const toggleVisibility = () => {
+    if (window.scrollY > 1000) {
+      setIsFixed(true); // Fix the navbar
+      setIsVisible(true); // Show navbar
+    } else if(window.scrollY > 300){
+      setIsVisible(false); // Hide navbar
+    }
+    else if (window.scrollY > 500) {
+      setIsFixed(true); // Unfix the navbar
+      // setIsVisible(false); // Hide navbar
+    } else {
+      setIsFixed(false); // Unfix the navbar
+      setIsVisible(true); // Show navbar
+    }
+  }
   const linkVariants = {
     hidden: { opacity: 0, x: 80 },
     visible: (i) => ({
@@ -35,18 +52,24 @@ const Navbar = () => {
   };
   useEffect(() => {
     updateGliderPosition();
+    toggleVisibility();
     window.addEventListener('resize', updateGliderPosition);
-    return () => window.removeEventListener('resize', updateGliderPosition);
+    window.addEventListener('scroll', toggleVisibility);
+
+    return () => {
+      window.removeEventListener('resize', updateGliderPosition);
+      window.removeEventListener('scroll', toggleVisibility);
+    };
   }, [selectedTab]);
 
   return (
-    <nav className="bg-blue-200 py-4 ">
+    <nav className={`${isFixed ? 'sticky  transition-all duration-500 ease-in-out' : 'relative '} ${isVisible ? 'md:translate-y-0' : 'md:-translate-y-full'}  bg-blue-200 py-4  top-0 left-0 right-0 z-50 `}>
       <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16 flex justify-between items-center">
         
         <Link to="/" className="text-blue-900 text-2xl font-bold z-50 relative">LOGDIGITAL</Link>
         
         <ul className="md:flex space-x-3 lg:space-x-6 text-blue-900 hidden font-bold text-lg">
-          {/* <Navlink /> */}
+          {/* <Navlink -- 'translate-y-0' : '-translate-y-full' /> */}
           <div className="container-class">
             <div className="tabs">
               <input
@@ -147,7 +170,7 @@ const Navbar = () => {
       <div
         className={`fixed inset-y-0 right-0 transform transition-transform duration-500 ease-in-out ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        } bg-white shadow-lg md:hidden w-full z-50`}
+        } bg-white shadow-lg md:hidden w-full z-50 `}
       >
         {/* gradient */}
         <div className='w-full h-full bg-white left-0 absolute top-0  bg-gradient-to-t from-white via-gray-200 to-blue-200'></div>
