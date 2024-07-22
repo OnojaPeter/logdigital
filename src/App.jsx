@@ -13,12 +13,14 @@ import Contact from "./pages/Contact";
 import ServiceDetail from "./components/ServiceDetail";
 import Service from "./pages/Service";
 import ScrollToTopButton from "./components/ScrollTop";
+import PageTop from "./components/PageTop";
 
 function App() {
 
   return (
     <Router>
       <div>
+        <PageTop />
         <Navbar />
         <Routes >
           <Route path="/" element={<Home />} />
