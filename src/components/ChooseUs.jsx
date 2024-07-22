@@ -2,7 +2,7 @@ import FeatureSection from "./FeatureSection";
 const peter = [ "results-driven approach", "Social Media expertise in multiple platforms", "continuous optimization"]
 const ChooseUs = () => {
   return (
-    <section className="text-white py-10 chooseUsBg">
+    <section className="text-white py-8 chooseUsBg">
 
         <FeatureSection
             sectionName="why choose us"

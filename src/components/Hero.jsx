@@ -52,19 +52,14 @@ const Hero = () => {
       };
 
     return (
-        <section className="pt-10 mb-10 md:mb-0 md:py-10  bg-blue-100 relative  ">{/* pt-5 svgBackground */}
+        <section className="pt-8 mb-10 md:mb-0 md:py-10  bg-blue-100 relative  ">{/* pt-5 svgBackground */}
+            {/* BG gradient */}
             <div className='w-full h-full bg-white left-0 absolute top-0  bg-gradient-to-t from-white via-gray-200 to-blue-200'></div>
-            {/* <div className='w-full'>
-                <div className='w-[50%] h-full bg-white left-0 absolute top-0 z-50 bg-gradient-to-t from-white via-gray-500 to-green-500'></div>
-                <div className='w-[50%] h-full bg-white right-0 absolute top-0 z-50 bg-gradient-to-r from-white bg-gray-500'></div>
-            </div> */}
-            {/* <div className='bg-white w-[500px] h-[500px] absolute -left-40 -top-24 opacity-50 rounded-full z-40 bg-gradient-to-t from-indigo-200 via-blue-200 to-blue-200'></div> */}
-            {/* <div className='h-[400px] w-[400px] rounded-full -left-28 -top-24 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-300 via-pink-300 to-blue-300 z-40 absolute'></div> */}
             <div className='absolute w-96 h-96 flex items-center justify-center z-40 -left-28 -top-28'>
                 <div className='relative w-96 h-96 bg-blue-50 rounded-full gradient-border'></div>
             </div>
 
-            <div className="max-w-[1400px] mx-auto  md:px-8 lg:px-16 text-start flex flex-col md:flex-row gap-10 relative z-40">
+            <div className="max-w-[1400px] mx-auto  md:px-8 lg:px-16 text-start flex flex-col md:flex-row md:gap-10 relative z-40">
                 <div className="md:w-[50%] flex flex-col justify-around gap-2 px-4 md:px-0">
                     <motion.h1 
                     ref={h1Animation.ref}
@@ -80,21 +75,14 @@ const Hero = () => {
                         initial="hidden" 
                         variants={text1Variants} 
                         >
-                            We help you navigate the digital landscape with innovative solutions tailored to your unique needs.</motion.p>
-                        {/* <motion.p 
-                        ref={text2Animation.ref}
-                        animate={text2Animation.controls} 
-                        initial="hidden" 
-                        variants={text2Variants} 
-                        >
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit facere sapiente, earum nihil.</motion.p> */}
+                            We help you navigate the digital landscape with innovative solutions tailored to your unique needs.
+                        </motion.p>
                     </div>
 
                     <div className="flex ">
                         <motion.div
                         ref={text2Animation.ref}
                         variants={buttonVariants}
-                        // whileHover={{ scale: 1.1, boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)" }}
                         whileTap={{ scale: 0.9 }}
                         initial="hidden" 
                         animate={text2Animation.controls}

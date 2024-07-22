@@ -13,7 +13,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
     return (
         <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16">
             <div className="flex justify-center">
-                <span className="uppercase font-bold px-3 py-1 border rounded-full">{sectionName}</span>
+                <span className={`uppercase font-bold px-3 py-1 border-2 ${sectionName === "about us" && 'border-gray-800'} rounded-full`}>{sectionName}</span>
             </div>
 
             <div className="flex flex-col gap-y-6 md:flex-row md:gap-2 lg:gap-10 mt-6 md:mt-0 items-center">
@@ -87,7 +87,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                             initial="hidden"
                             animate={imageAnimation.controls}
                             variants={imageAnimation.imageVariants}
-                            className="rounded-lg  object-cover w-full"
+                            className="rounded-lg  object-cover w-full "
                         /> {/*h-[250px] md:h-[400px]*/}
                     </div>
                 }

@@ -7,7 +7,7 @@ import Navlink from "./Navlink";
 function Footer() {
     return (
         <>
-            <footer className="bg-gray-900 text-white pt-10 sm:pt-20 pb-5">
+            <footer className="bg-gray-800 text-white pt-10 sm:pt-20 pb-5">
                 <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16  ">
                     <div className="flex justify-between flex-col sm:flex-row gap-y-8">
                         <div className="flex flex-col gap-4 sm:gap-7">
