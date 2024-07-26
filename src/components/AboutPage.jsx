@@ -4,15 +4,17 @@ function AboutPage() {
       <>
         <section>
           <div className="  pb-8 md:pb-14">
-            <div className="h-28 sm:h-40 relative">
-              <div className=" w-full bg-black blur-sm absolute inset-0">
-                <img className="h-28 sm:h-40 object-cover w-full" src="/images/media-marketing.jpg" alt="" />             
+            {/* <div className="h-28 sm:h-40 relative"> */}
+              <div className=" w-full relative h-28 sm:h-40">
+                <div className="aboutbg absolute h-full w-full top-0 left-0"></div>
+                <img className="h-28 sm:h-40 object-cover w-full " src="/images/media-marketing.jpg" alt="" />   
+                <h1 className="uppercase text-gray-100 text-4xl sm:text-5xl md:text-6xl font-semibold absolute inset-0 flex justify-center items-center">About Us</h1>          
               </div>
 
-              <div className="flex h-full justify-center items-center relative">
+              {/* <div className="flex h-full justify-center items-center relative">
                 <h1 className="uppercase text-gray-100 text-4xl sm:text-5xl md:text-6xl font-semibold  ">About Us</h1>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
             
             <div className="space-y-3 text-lg font-medium text-gray-600 mt-6 max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16">
               <div className="space-y-3">

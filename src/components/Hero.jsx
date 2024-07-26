@@ -14,13 +14,9 @@ const Hero = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 5000,
     };
     const images = [
-        // "/images/hero-pic.avif",
-        // "/images/media-marketing.jpg",
-        // "/images/marketing-branding.jpg",
-        // "/images/marketing_2.jpg",
         "/images/slide2.png",
         "/images/slide3.png",
         // "/images/slide4.png",

@@ -92,7 +92,7 @@ const servicesDetail = [
             description: "Improve your website’s visibility on search engines.",
           },
           {
-            name: "Pay-Per-Click (PPC) Advertising",
+            name: "Telemarketing",
             description:
               "Implement targeted ads on search engines and social media.",
           },
@@ -136,6 +136,10 @@ const servicesDetail = [
           {
             name: "Website Design and Development",
             description: "Build user-friendly and visually appealing websites.",
+          },
+          {
+            name: "White board animation and SVG",
+            description: ""
           },
         ],
       },
