@@ -31,7 +31,7 @@ const servicesDetail = [
     name: "Marketing & Advertising",
     shortDescription: "We offer an extensive range of market and advertising services designed to elevate your brand, enhance your market presence, and drive business growth. ",
     description:
-      "At LOG DIGITAL Marketing & Advertising, we offer an extensive range of market and advertising services designed to elevate your brand, enhance your market presence, and drive business growth. With a decade of expertise and a team of dedicated professionals, we tailor our services to meet the unique needs of each client, ensuring effective and impactful marketing strategies.",
+      "At LogDigital Marketing & Advertising, we offer an extensive range of market and advertising services designed to elevate your brand, enhance your market presence, and drive business growth. With a decade of expertise and a team of dedicated professionals, we tailor our services to meet the unique needs of each client, ensuring effective and impactful marketing strategies.",
     services: [
       {
         service: "Market Research and Analysis",
@@ -216,7 +216,7 @@ const servicesDetail = [
     name: "Technology Services",
     shortDescription: "Our tech services encompass everything from IT support and network management to advanced cybersecurity and cloud solutions. ",
     description:
-      "At LOG DIGITAL, we are at the forefront of technological innovation, offering a comprehensive suite of tech services designed to empower businesses and streamline operations. Our expert team of IT professionals is dedicated to providing cutting-edge solutions that cater to the diverse needs of our clients, ensuring they stay competitive in an ever-evolving digital landscape.",
+      "At LogDigital, we are at the forefront of technological innovation, offering a comprehensive suite of tech services designed to empower businesses and streamline operations. Our expert team of IT professionals is dedicated to providing cutting-edge solutions that cater to the diverse needs of our clients, ensuring they stay competitive in an ever-evolving digital landscape.",
     services: [
       {
         service: "Network Management ",
@@ -226,7 +226,7 @@ const servicesDetail = [
       {
         service: "Server Management",
         description:
-          "Server Management involves the administration, monitoring, and maintenance of servers to ensure optimal performance, reliability, and security. At LOG DIGITAL, our Server Management services are designed to keep your server infrastructure running smoothly and efficiently. ",
+          "Server Management involves the administration, monitoring, and maintenance of servers to ensure optimal performance, reliability, and security. At LogDigital, our Server Management services are designed to keep your server infrastructure running smoothly and efficiently. ",
         subService: [
           {
             name: "Server Monitoring",
@@ -277,7 +277,7 @@ const servicesDetail = [
           {
             name: "Software as a Service (SaaS)",
             description:
-              "Offering software applications on a subscription basis, hosted and managed by LOG DIGITAL. Our SaaS solutions eliminate the need for upfront investment in software licenses and hardware infrastructure, providing businesses with access to the latest software tools and updates.",
+              "Offering software applications on a subscription basis, hosted and managed by LogDigital. Our SaaS solutions eliminate the need for upfront investment in software licenses and hardware infrastructure, providing businesses with access to the latest software tools and updates.",
           },
           {
             name: "Cloud Storage",
@@ -299,7 +299,7 @@ const servicesDetail = [
       {
         service: "Consulting Services",
         description:
-          "At LOG DIGITAL, we offer comprehensive IT consulting services designed to help businesses navigate the complex landscape of technology and maximize their IT investments. With our team of experienced consultants, we provide strategic guidance, innovative solutions, and expert advice tailored to meet the unique needs of each client. Our IT consulting services cover a wide range of areas, including:",
+          "At LogDigital, we offer comprehensive IT consulting services designed to help businesses navigate the complex landscape of technology and maximize their IT investments. With our team of experienced consultants, we provide strategic guidance, innovative solutions, and expert advice tailored to meet the unique needs of each client. Our IT consulting services cover a wide range of areas, including:",
         subService: [
           {
             name: "Cybersecurity and Risk Management",
@@ -345,7 +345,7 @@ const servicesDetail = [
     id: 3,
     name: "Management services",
     shortDescription: "With a commitment to excellence, and a focus on maximizing value for our clients, we offer a range of management services tailored to meet their unique needs.",
-    description: "LOG DIGITAL is a leading management services company dedicated to providing comprehensive solutions for property owners seeking professional management of their event centres, gardens, halls, and short-term rental apartments. With a commitment to excellence, attention to detail, and a focus on maximizing value for our clients, we offer a range of management services tailored to meet their unique needs and objectives. ",
+    description: "LogDigital is a leading management services company dedicated to providing comprehensive solutions for property owners seeking professional management of their event centres, gardens, halls, and short-term rental apartments. With a commitment to excellence, attention to detail, and a focus on maximizing value for our clients, we offer a range of management services tailored to meet their unique needs and objectives. ",
     services: [
       {
         service: "Our services include:",
@@ -380,7 +380,7 @@ const servicesDetail = [
     id: 4,
     name: "Outsourcing (BPO)",
     shortDescription: "We leverage cutting-edge technology, industry best practices, and a global talent pool to deliver superior BPO services that drive business success. ",
-    description: "LOG DIGITAL is a premier Business Process Outsourcing (BPO) company dedicated to providing exceptional outsourcing solutions to businesses worldwide. With a focus on efficiency, quality, and cost-effectiveness, we specialize in delivering a wide range of BPO services tailored to meet the unique needs and objectives of our clients. ",
+    description: "LogDigital is a premier Business Process Outsourcing (BPO) company dedicated to providing exceptional outsourcing solutions to businesses worldwide. With a focus on efficiency, quality, and cost-effectiveness, we specialize in delivering a wide range of BPO services tailored to meet the unique needs and objectives of our clients. ",
     services: [
       {
         service: "Our comprehensive suite of BPO services includes:",

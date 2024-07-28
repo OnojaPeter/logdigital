@@ -5,9 +5,9 @@ function AboutPage() {
         <section>
           <div className="  pb-8 md:pb-14">
             {/* <div className="h-28 sm:h-40 relative"> */}
-              <div className=" w-full relative h-28 sm:h-40">
+              <div className=" w-full relative h-28 sm:h-52">
                 <div className="aboutbg absolute h-full w-full top-0 left-0"></div>
-                <img className="h-28 sm:h-40 object-cover w-full " src="/images/media-marketing.jpg" alt="" />   
+                <img className="h-28 sm:h-52 object-cover w-full " src="/images/media-marketing.jpg" alt="" />   
                 <h1 className="uppercase text-gray-100 text-4xl sm:text-5xl md:text-6xl font-semibold absolute inset-0 flex justify-center items-center">About Us</h1>          
               </div>
 
