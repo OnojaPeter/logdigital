@@ -54,11 +54,11 @@ const Hero = () => {
             {/* <div className='absolute w-96 h-96 flex items-center justify-center z-40 -left-28 -top-28'>
                 <div className='relative w-96 h-96 bg-blue-50 rounded-full gradient-border'></div>
             </div> */}
-            <div className='absolute overflow-hidden  flex justify-center inset-0 top-0 z-40'>
+            {/* <div className='absolute overflow-hidden hidden justify-center inset-0 top-0 z-40 '>
                 <div className='relative w-[400px] h-[400px] rounded-full relative blur-[70px] circle1 bg-opacity-50  bg-blue-300'></div>
                 <div className='relative w-[400px] h-[400px] rounded-full relative blur-[70px] circle2 bg-opacity-50  bg-gray-300'></div>
                 <div className='relative w-[400px] h-[400px] rounded-full relative blur-[70px] circle1 bg-opacity-50  bg-purple-200'></div>
-            </div>
+            </div> */}
 
             <div className="max-w-[1400px] mx-auto  md:px-8 lg:px-16 text-start flex flex-col md:flex-row md:gap-10 relative z-40">
                 <div className="md:w-[50%] flex flex-col justify-around gap-2 px-4 md:px-0">
