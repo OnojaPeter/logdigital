@@ -27,7 +27,7 @@ const ContactPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true)
-        // console.log(formData)
+        console.log(formData)
         try {
             const response = await axios.post('https://log-backend.vercel.app/contact', { 
                 name: formData.name, 
