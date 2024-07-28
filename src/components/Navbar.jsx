@@ -63,7 +63,7 @@ const Navbar = () => {
   }, [selectedTab]);
 
   return (
-    <nav className={`${isFixed ? 'sticky  transition-all duration-500 ease-in-out' : 'relative '} ${isVisible ? 'md:translate-y-0' : 'md:-translate-y-full'}  bg-blue-200 py-4  top-0 left-0 right-0 z-50 `}>
+    <nav className={`${isFixed ? 'sticky  transition-all duration-500 ease-in-out' : 'relative '} ${isVisible ? 'md:translate-y-0' : 'md:-translate-y-full'}  bg-blue-200 md:py-4  top-0 left-0 right-0 z-50 `}>
       <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16 flex justify-between items-center">
         
         <Link to="/" className="text-blue-900 text-2xl font-bold z-50 relative">LOGDIGITAL</Link>
@@ -160,7 +160,7 @@ const Navbar = () => {
         </div>
 
         <div className='md:hidden block cursor-pointer'>
-          <button onClick={()=>{setIsMobileMenuOpen(!isMobileMenuOpen)}} >
+          <button className='py-3 w-14 flex justify-center' onClick={()=>{setIsMobileMenuOpen(!isMobileMenuOpen)}} >
             <FaBarsStaggered className='text-blue-900 text-3xl' />
           </button>
         </div>
