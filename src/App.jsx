@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 import Home from './pages/Home';
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import ServiceDetail from "./components/ServiceDetail";
+// import ServiceDetail from "./components/ServiceDetail";
 import Service from "./pages/Service";
 import ScrollToTopButton from "./components/ScrollTop";
 import PageTop from "./components/PageTop";

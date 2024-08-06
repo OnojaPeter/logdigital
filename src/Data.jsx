@@ -279,7 +279,7 @@ const servicesDetail = [
       },
       {
         service: "Hospitality and leisure industry Management",
-        image: '.webp',
+        image: 'leisure.webp',
         description: "In the hospitality and leisure industry, management involves the supervision and organization of different services and activities to guarantee customer contentment, efficient operations, and financial success.",
         subService: [
           {
@@ -292,7 +292,7 @@ const servicesDetail = [
       },
       {
         service: "Hotels and Resorts",
-        image: '.webp',
+        image: 'hotel-resorts.webp',
         description: "Logdigital Hotels and Resorts management services encompass a comprehensive range of activities aimed at ensuring the smooth operation, high guest satisfaction, and profitability of the hotels and resorts under its management. These services are designed to cover every aspect of hotel and resort operations, from front desk management to financial oversight.",
         subService: [
           {

@@ -8,7 +8,7 @@ const peter = [
 ]
 const ChooseUs = () => {
   return (
-    <section className="text-white py-8 chooseUsBg">
+    <section className="text-white py-8 bg-blue-500"> {/*chooseUsBg*/}
 
         <FeatureSection
             sectionName="why choose us"

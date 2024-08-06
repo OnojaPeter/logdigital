@@ -67,9 +67,9 @@ const Hero = () => {
                     initial="hidden"
                     animate={h1Animation.controls}
                     variants={h1Variants}
-                    className="hero-text font-bold">Your trusted partner in <span className='text-blue-700'> Technology, Marketing, and Business Management Excellence.</span></motion.h1> {/* Boost Your Online Presence with Digital Marketing Services*/}
+                    className="hero-text font-bold">Your trusted partner in <span className='text-blue-700'> Technology, Marketing, & Business Management Excellence.</span></motion.h1> {/* Boost Your Online Presence with Digital Marketing Services*/}
 
-                    <div className="flex flex-col gap-4 pr-[10%] sm:pr-[0%] lg:pr-[20%] text-gray-700 text-lg md:text-xl font-bold">
+                    <div className="flex flex-col gap-4 pr-[10%] sm:pr-[0%] lg:pr-[20%] text-gray-600 text-lg md:text-xl font-medium md:font-bold">
                         <motion.p 
                         ref={text1Animation.ref}
                         animate={text1Animation.controls} 

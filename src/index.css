@@ -22,7 +22,7 @@ h2 {
     "wdth" 100;
 }
 p,li {
-  font-family: 'poppins';
+  font-family: 'Poppins', sans-serif;
 }
 .hero-text {
     font-size: 3rem;
@@ -473,7 +473,7 @@ body {
 .card {
   /* width: 300px;
   height: 200px; */
-  background: linear-gradient(to right,rgb(137, 104, 255),rgb(175, 152, 255));
+  background: linear-gradient(to right,#1976d2,#2196f3);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -488,7 +488,7 @@ body {
   width: 150px;
   height: 150px;
   content: "";
-  background: linear-gradient(to right,rgb(142, 110, 255),rgb(208, 195, 255));
+  background: linear-gradient(to right,#65b1ef,#8ac5f3);
   position: absolute;
   z-index: 1;
   border-radius: 50%;
@@ -515,17 +515,18 @@ body {
 
 .learnMoreButton {
   padding: 11px 20px;
-  background-color: #7b57ff;
+  background-color: #f2f2f8;
   transition-duration: .2s;
   border: none;
-  color: rgb(241, 241, 241);
+  color: rgb(28, 25, 25);
   cursor: pointer;
   font-weight: 600;
   z-index: 2;
 }
 
 .learnMoreButton:hover {
-  background-color: #4a26cd;
+  background-color: #1c3097;
+  color: rgb(255, 255, 255);
   transition-duration: .2s;
 }
 

@@ -33,8 +33,8 @@ import { Link } from 'react-router-dom';
           variants={sectionAnimation.variants} 
            className="flex flex-col items-center md:text-center px-4 md:px-8 lg:px-16">
             <span className="uppercase font-bold px-3 py-1 border-2 border-gray-800 rounded-full ">our services</span>
-            <h2 className="text-4xl font-bold my-5 capitalize">elevate your digital presence today</h2>
-            <p className="text-lg md:text-center md:text-xl  md:mx-10 lg:mx-10 font-bold text-gray-800">
+            <h2 className="text-3xl md:text-4xl text-blue-500 font-bold my-5 capitalize">elevate your digital presence today</h2>
+            <p className="text-lg md:text-center md:text-xl  md:mx-10 lg:mx-10 md:font-medium text-gray-700">
               In the bustling landscape of digital innovation, LogDigital emerges as a pioneering force, seamlessly integrating technology, marketing prowess, and business development expertise. Founded on the principles of innovation and client-centric solutions, LogDigital has carved a niche for itself at the intersection of cutting edge technology and strategic business growth
             </p>
           </motion.div>

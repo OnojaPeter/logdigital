@@ -24,7 +24,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                         initial="hidden"
                         animate={titleAnimation.controls}
                         variants={titleAnimation.textVariants}
-                        className={`text-4xl md:text-5xl font-bold mb-3 md:mb-8 capitalize ${sectionName === "about us" && "text-black"}`}
+                        className={`text-3xl md:text-4xl font-bold mb-3 md:mb-8 capitalize ${sectionName === "about us" && "text-blue-500"}`}
                     >
                         {title}
                     </motion.h2>
@@ -33,7 +33,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                         initial="hidden"
                         animate={descriptionAnimation.controls}
                         variants={descriptionAnimation.variants}
-                        className="font-bold text-lg md:text-xl font-bold mb-3 md:mb-8"
+                        className=" md:font-medium text-lg md:text-xl mb-3 md:mb-8"
                     >
                         {description}
                     </motion.p>
@@ -43,7 +43,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                         initial="hidden"
                         animate={moreDescriptionAnimation.controls}
                         variants={moreDescriptionAnimation.textVariants}
-                        className="text-lg md:text-xl font-bold mb-3 md:mb-8"
+                        className="text-lg md:text-xl md:font-medium mb-3 md:mb-8"
                     >
                         {moreDescription}
                     </motion.p>
@@ -51,17 +51,17 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                     {extraText && (
                         <div ref={extraTextAnimation.ref} className="space-y-4">
                             {extraText.map((text, index) => (
-                                <motion.span
+                                <motion.div
                                     key={index}
                                     initial="hidden"
                                     animate={extraTextAnimation.controls}
                                     variants={extraTextAnimation.variants}
-                                    className="flex items-center gap-2 my-2 md:my-4"
+                                    className="flex  gap-2 my-2 md:my-4"
                                 >
-                                    <img className="h-10 w-10" src="/images/service-logo.png" alt="" />
-                                    {/* <LuArrowBigRightDash className='h-10 w-10' /> */}
-                                    <p className="text-lg text-white capitalize font-bold">{text}</p>
-                                </motion.span>
+                                    {/* <img className="h-10 w-10" src="/images/service-logo.png" alt="" /> */}
+                                    <div><LuArrowBigRightDash className='pt-2 w-6 h-6 md:w-8 md:h-8' /></div>
+                                    <p className="text-[0.9rem] md:text-lg text-white capitalize">{text}</p>
+                                </motion.div>
                             ))}
                         </div>
                     )}
@@ -74,7 +74,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                             whileTap={{ scale: 0.9 }}
                             initial="hidden"
                             animate={buttonAnimation.controls}
-                            className=" text-white font-medium px-6 py-3 bg-[#7b57ff] rounded-md"
+                            className=" text-white font-medium px-6 py-3 bg-blue-500 rounded-md"
                         >
                             <Link to={link}>{buttonText}</Link>
                         </motion.button>
@@ -89,7 +89,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                             initial="hidden"
                             animate={imageAnimation.controls}
                             variants={imageAnimation.imageVariants}
-                            className="rounded-lg  object-cover w-full "
+                            className="rounded-lg w-[70%] h-[70%] object-cover w-full "
                         /> {/*h-[250px] md:h-[400px]*/}
                     </div>
                 }
