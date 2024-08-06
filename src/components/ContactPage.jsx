@@ -56,14 +56,14 @@ const ContactPage = () => {
     }
 
     return (
-        <section className="bg-gray-50 py-7 md:py-12 h-full">
+        <section className=" py-7 md:py-12 h-full">
             <div className="max-w-[1400px] mx-auto text-center px-4 md:px-8 lg:px-16">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 capitalize">want to get in touch?</h2>
-                <p className='sm:mx-10 md:mx-20 lg:mx-32 text-sm md:text-lg mt-2'>We love hearing from people, whether they're our users or just curious about what we do. If you have any questions about our products or want to give us feedback, don't hesitate to get in touch with us</p>
+                <h2 className="text-3xl md:text-4xl font-medium text-blue-400 capitalize">want to get in touch?</h2>
+                <p className='sm:mx-10 md:mx-20 lg:mx-32 text-sm md:text-lg mt-2 text-gray-700'>We love hearing from people, whether they're our users or just curious about what we do. If you have any questions about our products or want to give us feedback, don't hesitate to get in touch with us</p>
 
-                <div className='flex flex-col-reverse md:flex-row justify-between gap-y-8 gap-x-12 lg:gap-x-20 mt-6 md:mt-12 bg-blue-100 p-6 md:p-10 lg:p-16 rounded-lg'>
-                    <div className='text-start font-medium'>
-                        <h2 className='capitalize font-bold text-xl mb-8'>lets join forces to create unique experiences</h2>
+                <div className='flex flex-col-reverse md:flex-row justify-between gap-y-8 gap-x-12 lg:gap-x-20 mt-6 md:mt-12 bg-blue-100 shadow-xl p-6 md:p-10 lg:p-16 rounded-lg'>
+                    <div className='text-start font-medium text-gray-800'>
+                        <h2 className='capitalize font-bold text-xl mb-8 text-blue-500'>lets join forces to create unique experiences</h2>
                         <p className='uppercase'>we will transform your brand</p>
                         <p className='text-sm'>Our ears and mind are here for you reach out!</p>
 
@@ -82,7 +82,7 @@ const ContactPage = () => {
 
                             <textarea value={formData.message} onChange={handleChange} name='message' id='message' className="w-full px-4 py-2 border rounded-lg" rows="5" placeholder="How can we help you? *" required></textarea>
                             
-                            <button type="submit" disabled={loading} style={{boxShadow:'0px 4px 10px rgba(0, 0, 0, 0.3)'}} className="bg-indigo-600 transform transition ease-in-out duration-300  hover:scale-110 text-white px-3 md:px-8 py-2 rounded-lg hover:bg-indigo-700 flex items-center justify-center gap-1">
+                            <button type="submit" disabled={loading} style={{boxShadow:'0px 4px 10px rgba(0, 0, 0, 0.3)'}} className="bg-blue-500 transform transition ease-in-out duration-300  hover:scale-110 text-white px-3 md:px-8 py-2 rounded-lg hover:bg-blue-600 flex items-center justify-center gap-1">
                                 {loading ? <div className="spinner"></div>
                                     : 
                                     <div className='flex items-center justify-center gap-1'>

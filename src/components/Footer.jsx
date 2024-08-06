@@ -21,11 +21,22 @@ function Footer() {
                             </div>
 
 
-                            <ul className="flex flex-row sm:flex-col gap-3 text-white">
-                                <a href="https://x.com/LogDigitalL" target="_blank" rel="noopener noreferrer" className="flex gap-2 hover:text-blue-300"><BsTwitterX className="text-2xl" /><p className="hidden sm:block">X (Formally twitter)</p></a>
-                                <a href="https://www.facebook.com/profile.php?id=61558437026463&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="flex gap-2 hover:text-blue-300"><FaFacebookF className="text-2xl" /><p className="hidden sm:block">Facebook</p></a>
-                                <a href="https://www.instagram.com/logdigital_limited?igsh=MW9qNWoyZzU1N3p6cw==" target="_blank" rel="noopener noreferrer" className="flex gap-2 hover:text-blue-300"><FaInstagram className="text-2xl" /><p className="hidden sm:block">Instagram</p></a>
-                                <a href="https://www.linkedin.com/company/logdigital-limited" target="_blank" rel="noopener noreferrer" className="flex gap-2 hover:text-blue-300"><FaLinkedinIn className="text-2xl" /><p className="hidden sm:block">LinkedIn</p></a>
+                            <ul className="flex flex-row gap-3 text-white">
+                                <div className="bg-black hover:bg-white hover:text-black rounded-md ">
+                                    <a href="https://x.com/LogDigitalL" target="_blank" rel="noopener noreferrer" className="flex gap-2 p-2"><BsTwitterX className="text-2xl" /></a>
+                                </div>
+
+                                <div className="bg-blue-700 hover:bg-blue-900 rounded-md ">
+                                    <a href="https://www.facebook.com/profile.php?id=61558437026463&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="flex gap-2 p-2"><FaFacebookF className="text-2xl" /></a>
+                                </div>
+
+                                <div className="bg-pink-600 hover:bg-pink-800 rounded-md ">
+                                    <a href="https://www.instagram.com/logdigital_limited?igsh=MW9qNWoyZzU1N3p6cw==" target="_blank" rel="noopener noreferrer" className="flex gap-2 p-2"><FaInstagram className="text-2xl" /></a>
+                                </div>
+
+                                <div className="bg-blue-700 hover:bg-blue-900  rounded-md ">
+                                    <a href="https://www.linkedin.com/company/logdigital-limited" target="_blank" rel="noopener noreferrer" className="flex gap-2 p-2"><FaLinkedinIn className="text-2xl" /></a>
+                                </div>
                             </ul>
                         </div>
 

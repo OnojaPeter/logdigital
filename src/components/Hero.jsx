@@ -50,7 +50,7 @@ const Hero = () => {
     return (
         <section className="pt-8 mb-10 md:mb-0 md:py-10  bg-blue-100 relative  ">{/* pt-5 svgBackground */}
             {/* BG gradient */}
-            <div className='w-full h-full bg-white left-0 absolute top-0  bg-gradient-to-t from-white via-gray-200 to-blue-200'></div>
+            <div className='w-full h-full bg-white left-0 absolute top-0  bg-gradient-to-t from-gray-50 via-gray-50 to-blue-200'></div>
             {/* <div className='absolute w-96 h-96 flex items-center justify-center z-40 -left-28 -top-28'>
                 <div className='relative w-96 h-96 bg-blue-50 rounded-full gradient-border'></div>
             </div> */}

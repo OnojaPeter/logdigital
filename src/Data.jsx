@@ -29,313 +29,175 @@ const servicesDetail = [
   {
     id: 1,
     name: "Marketing & Advertising",
+    bannerImg: '',
     shortDescription: "We offer an extensive range of market and advertising services designed to elevate your brand, enhance your market presence, and drive business growth. ",
     description:
-      "At LogDigital Marketing & Advertising, we offer an extensive range of market and advertising services designed to elevate your brand, enhance your market presence, and drive business growth. With a decade of expertise and a team of dedicated professionals, we tailor our services to meet the unique needs of each client, ensuring effective and impactful marketing strategies.",
+      "At LogDigital, we’re not just about marketing; we’re about creating meaningful connections and driving your business forward. Whether you’re a budding startup or an established brand, our expert team is here to help you navigate the dynamic world of marketing and advertising with innovative strategies tailored to your unique needs.",
     services: [
       {
-        service: "Market Research and Analysis",
-        description:
-          "Our market research services provide deep insights to help you understand your market landscape and target audience effectively.",
-        subService: [
-          {
-            name: "Consumer Insights",
-            description:
-              "Analyze consumer behavior, preferences, and trends to inform marketing strategies.",
-          },
-          {
-            name: "Competitive Analysis",
-            description:
-              "Evaluate competitors' strategies, strengths, and weaknesses to identify opportunities.",
-          },
-          {
-            name: "Market Segmentation",
-            description:
-              "Segment your market to tailor marketing efforts to specific audience groups.",
-          },
-          {
-            name: "SWOT Analysis",
-            description:
-              "Assess your company's strengths, weaknesses, opportunities, and threats.",
-          },
-        ],
-      },
-      {
-        service: "Brand Strategy and Development",
-        description:
-          "We help build and enhance your brand identity and strategy, ensuring a strong market presence.",
-        subService: [
-          {
-            name: "Brand Identity Creation",
-            description:
-              "Develop logos, taglines, and visual elements that represent your brand.",
-          },
-          {
-            name: "Positioning and Messaging",
-            description:
-              "Create compelling brand messages and positioning statements.",
-          },
-          {
-            name: "Rebranding",
-            description:
-              "Refresh and revitalize existing brands to stay relevant in the market.",
-          },
-        ],
-      },
-      {
         service: "Digital Marketing",
+        image: 'digital-marketing.webp',
         description:
-          "Harness the power of digital platforms to reach and engage with your target audience.",
+          "In today’s digital age, a robust online presence is essential. Our digital marketing services are designed to enhance your visibility, engage your audience, and drive conversions. Here’s how we can help:",
         subService: [
           {
             name: "Search Engine Optimization (SEO)",
-            description: "Improve your website’s visibility on search engines.",
-          },
-          {
-            name: "Telemarketing",
-            description:
-              "Implement targeted ads on search engines and social media.",
           },
           {
             name: "Social Media Marketing",
-            description:
-              "Manage and optimize campaigns on platforms like Facebook, Instagram, and LinkedIn.",
           },
           {
             name: "Content Marketing",
-            description:
-              "Develop engaging content to attract and retain customers.",
           },
           {
             name: "Email Marketing",
-            description:
-              "Create personalized email campaigns to nurture and convert leads.",
           },
         ],
       },
       {
-        service: "Creative Services",
+        service: "Branding and Creative Services",
+        image: 'branding-and-creative.webp',
         description:
-          "Our creative team produces visually stunning and engaging content to captivate your audience.",
+          "Your brand is your identity. It’s what sets you apart from the competition. Our branding and creative services help you build a strong, cohesive brand that resonates with your target audience.",
         subService: [
           {
+            name: "Brand Strategy",
+          },
+          {
             name: "Graphic Design",
-            description:
-              "Design eye-catching graphics for print and digital media.",
           },
           {
-            name: "Video Production",
-            description:
-              "Produce high-quality videos for advertisements, tutorials, and brand stories.",
-          },
-          {
-            name: "Copywriting",
-            description:
-              "Craft persuasive and engaging copy for various marketing materials.",
+            name: "Video Production (SVG and Whiteboard Animation)",
           },
           {
             name: "Website Design and Development",
-            description: "Build user-friendly and visually appealing websites.",
-          },
-          {
-            name: "White board animation and SVG",
-            description: ""
           },
         ],
       },
       {
-        service: "Media Planning",
+        service: "Paid Advertising",
+        image: 'paid-advertising.webp',
         description:
-          "Maximize your advertising budget with strategic media planning services.",
+          "Maximize your reach and ROI with our paid advertising services. We create targeted ad campaigns that get your message in front of the right people at the right time.",
         subService: [
           {
-            name: "Television and Radio Advertising",
-            description: "Create and place ads on TV and radio channels.",
+            name: "Pay-Per-Click (PPC) Advertising",
           },
           {
-            name: "Print Media",
-            description:
-              "Advertise in newspapers, magazines, and other print media.",
+            name: "Social Media Ads",
           },
-          { name: "Digital Media", description: "Digital Media" },
           {
-            name: "Out-of-Home (OOH) Advertising",
-            description:
-              "Utilize billboards, transit ads, and other outdoor formats.",
+            name: "Display Advertising",
           },
         ],
       },
       {
-        service: "Public Relations",
+        service: "Market Research and Analytics",
+        image: 'analytics.webp',
         description:
-          "Maintain a positive public image and manage communications effectively.",
+          "Informed decisions lead to better outcomes. Our market research and analytics services provide you with the insights you need to understand your market, audience, and the effectiveness of your campaigns.",
         subService: [
-          {
-            name: "Media Relations",
-            description:
-              "Secure media coverage and build relationships with media outlets.",
-          },
-          {
-            name: "Crisis Management",
-            description:
-              "Handle negative publicity and mitigate its impact on your brand.",
-          },
-          {
-            name: "Event Planning and Management",
-            description: "Organize events that align with your brand’s goals.",
-          },
-        ],
-      },
-      {
-        service: "Data and Analytics",
-        description:
-          "Make data-driven decisions with our comprehensive analytics services.",
-        subService: [
-          {
-            name: "Campaign Analytics",
-            description:
-              "Track and analyse the performance of your marketing campaigns.",
-          },
           {
             name: "Consumer Insights",
-            description:
-              "Gather and analyze data on consumer behaviour and preferences.",
           },
           {
-            name: "Performance Tracking and Reporting",
-            description:
-              "Provide regular reports on marketing activities and outcomes.",
+            name: "Competitive Analysis",
+          },
+          {
+            name: "Campaign Analytics",
           },
         ],
-      },
+      }
     ],
-    path: "/services/marketing&advertising",
+    path: "/services/marketing-advertising",
   },
   {
     id: 2,
     name: "Technology Services",
+    bannerImg: '',
     shortDescription: "Our tech services encompass everything from IT support and network management to advanced cybersecurity and cloud solutions. ",
     description:
-      "At LogDigital, we are at the forefront of technological innovation, offering a comprehensive suite of tech services designed to empower businesses and streamline operations. Our expert team of IT professionals is dedicated to providing cutting-edge solutions that cater to the diverse needs of our clients, ensuring they stay competitive in an ever-evolving digital landscape.",
+      "We believe in harnessing the power of technology to drive innovation, streamline operations, and empower your business to reach new heights. Our expert team is here to provide you with top-notch tech solutions tailored to your unique needs. Whether you’re a startup, a growing business, or an established enterprise, we’re dedicated to helping you navigate the ever-evolving tech landscape with ease and confidence.",
     services: [
       {
-        service: "Network Management ",
+        service: "IT Consulting",
+        image: 'consulting.webp',
         description:
-          "Our Network Management services ensure your company's IT infrastructure operates efficiently, reliably, and securely. We provide comprehensive monitoring, configuration, and optimization of network components to maintain optimal performance and prevent downtime. Our expert team manages network security, implementing robust measures to protect against threats. We also offer troubleshooting support, capacity planning, and automated solutions to enhance network operations. With our proactive approach, your business can enjoy seamless connectivity and robust network health, enabling you to focus on your core operations with confidence.",
-      },
-      {
-        service: "Server Management",
-        description:
-          "Server Management involves the administration, monitoring, and maintenance of servers to ensure optimal performance, reliability, and security. At LogDigital, our Server Management services are designed to keep your server infrastructure running smoothly and efficiently. ",
+          "Navigating the complexities of technology can be daunting. Our IT consulting services are designed to provide you with expert guidance and strategic insights to help you make informed decisions. Whether you need help with IT infrastructure, software development, or cybersecurity, our consultants are here to assist you.",
         subService: [
           {
-            name: "Server Monitoring",
-            description:
-              "Continuous monitoring of server performance metrics such as CPU usage, memory utilization, disk space, and network activity to detect and address issues proactively.",
+            name: "IT Strategy and Planning",
           },
           {
-            name: "Security Management",
-            description:
-              "Implementing robust security measures including regular updates, patch management, firewall configuration, and intrusion detection to protect against threats and vulnerabilities.",
+            name: "Technology Assessments",
           },
           {
-            name: "Backup and Recovery",
-            description:
-              "Ensuring data integrity with regular backups and implementing disaster recovery solutions to minimize downtime and data loss.",
-          },
-          {
-            name: "Performance Optimization",
-            description:
-              "Tuning server settings and optimizing resource allocation to enhance the performance of applications and services.",
-          },
-          {
-            name: "Routine Maintenance",
-            description:
-              "Performing regular updates, system health checks, and hardware maintenance to keep servers operating at peak efficiency.",
-          },
-          {
-            name: "24/7 Support",
-            description:
-              "Providing round-the-clock technical support to resolve server issues quickly and minimize disruptions to your business operations.",
+            name: "Project Management",
           },
         ],
       },
       {
-        service: "Cloud Services",
-        description:
-          "Cloud Services refer to the delivery of computing resources and applications over the internet, providing on-demand access to scalable and flexible IT solutions. We offer a wide range of Cloud Services tailored to meet the evolving needs of businesses. ",
+        service: "Project Management",
+        image: 'project-management.webp',
+        description: "Focus on your core business while we take care of your IT needs. Our managed IT services offer proactive monitoring, maintenance, and support to keep your systems running smoothly and efficiently.",
         subService: [
           {
-            name: "Infrastructure as a Service (IaaS)",
-            description: "Provisioning virtualized computing resources such as servers, storage, and networking infrastructure, enabling businesses to deploy and manage their IT infrastructure in a scalable and cost-effective manner.",
+            name: "24/7 IT Support",
           },
           {
-            name: "Platform as a Service (PaaS)",
-            description:
-              "Providing a platform for developing, deploying, and managing applications without the complexity of building and maintaining the underlying infrastructure. Our PaaS solutions streamline the application development process, allowing businesses to focus on innovation and agility.",
+            name: "Network Management",
           },
           {
-            name: "Software as a Service (SaaS)",
-            description:
-              "Offering software applications on a subscription basis, hosted and managed by LogDigital. Our SaaS solutions eliminate the need for upfront investment in software licenses and hardware infrastructure, providing businesses with access to the latest software tools and updates.",
-          },
-          {
-            name: "Cloud Storage",
-            description:
-              "Providing secure and reliable storage solutions for storing, backing up, and sharing data in the cloud. Our cloud storage services offer scalability, accessibility, and data redundancy, ensuring business continuity and disaster recovery.",
-          },
-          {
-            name: "Hybrid Cloud Solutions",
-            description:
-              "Designing and implementing hybrid cloud architectures that combine on-premises infrastructure with public and private cloud environments. Our hybrid cloud solutions enable businesses to leverage the benefits of both worlds, including flexibility, scalability, and data sovereignty.",
-          },
-          {
-            name: "Cloud Migration and Consulting",
-            description:
-              "Assisting businesses in migrating their existing IT infrastructure and applications to the cloud. Our cloud consulting services help businesses develop a cloud strategy, assess workload suitability, and optimize cloud usage for cost efficiency and performance.",
+            name: "Data Backup and Recovery",
           },
         ],
       },
       {
-        service: "Consulting Services",
-        description:
-          "At LogDigital, we offer comprehensive IT consulting services designed to help businesses navigate the complex landscape of technology and maximize their IT investments. With our team of experienced consultants, we provide strategic guidance, innovative solutions, and expert advice tailored to meet the unique needs of each client. Our IT consulting services cover a wide range of areas, including:",
+        service: "Cybersecurity",
+        image: 'cyber.webp',
+        description: "In today’s digital age, cybersecurity is more important than ever. Our comprehensive cybersecurity services are designed to safeguard your business against threats and vulnerabilities.",
         subService: [
           {
-            name: "Cybersecurity and Risk Management",
-            description: "Protecting sensitive data and ensuring regulatory compliance are top priorities for businesses. We assess cybersecurity risks, develop comprehensive security strategies, and implement robust defense mechanisms to safeguard against cyber threats.",
+            name: "Risk Assessments",
           },
           {
-            name: "Data protection"
+            name: "Compliance Services",
           },
           {
-            name: "Software Development and Integration",
-            description: "From custom software development to integrating third-party applications, we help clients leverage technology to streamline operations and drive innovation. Our consultants work closely with clients to understand their unique requirements and deliver tailored software solutions.",
+            name: "Incident Response",
+          },
+        ],
+      },
+      {
+        service: "Cloud Solutions",
+        image: 'cloud-solutions.webp',
+        description: "Leverage the power of the cloud to enhance flexibility, scalability, and efficiency. Our cloud solutions are tailored to meet your specific needs, whether you’re looking to migrate to the cloud, optimize your current cloud infrastructure, or develop cloud-native applications.",
+        subService: [
+          {
+            name: "Cloud Migration",
           },
           {
-            name: "Technology Strategy and Planning",
-            description:
-              "We work closely with clients to develop customized technology strategies aligned with their business goals. Our consultants assess current IT infrastructure, identify areas for improvement, and develop roadmaps for future growth.",
+            name: "Cloud Management",
           },
           {
-            name: "Project Management and Implementation",
-            description: "Successful IT projects require careful planning, execution, and management. Our experienced project managers oversee every stage of the project lifecycle, ensuring projects are delivered on time, within budget, and according to specifications.",
-          },          
+            name: "Cloud Security",
+          },
+        ],
+      },
+      {
+        service: "Software Development",
+        image: 'software-dev.webp',
+        description: "Bring your ideas to life with our custom software development services. Our team of skilled developers is here to create innovative solutions that drive your business forward.",
+        subService: [
           {
-            name: "IT Infrastructure Optimization",
-            description:
-              "Our consultants analyze existing IT infrastructure to identify inefficiencies and opportunities for optimization. Whether it's upgrading hardware, migrating to the cloud, or implementing virtualization solutions, we help clients maximize the performance and reliability of their IT systems.",
+            name: "Custom Applications",
           },
           {
-            name: "Digital Transformation",
-            description:
-              "In today's rapidly evolving digital landscape, businesses need to adapt quickly to stay competitive. We help clients embrace digital transformation by leveraging emerging technologies, streamlining processes, and enhancing customer experiences.",
-          },         
-          {
-            name: "Training and Change Management",
-            description: "Adopting new technologies often requires changes in organizational culture and processes. We provide training and change management services to help clients navigate transitions smoothly and ensure the successful adoption of new technologies.",
+            name: "Mobile App Development",
           },
-          
+          {
+            name: "System Integration",
+          },
         ],
       },
     ],
@@ -344,32 +206,151 @@ const servicesDetail = [
   {
     id: 3,
     name: "Management services",
+    bannerImg: '',
     shortDescription: "With a commitment to excellence, and a focus on maximizing value for our clients, we offer a range of management services tailored to meet their unique needs.",
-    description: "LogDigital is a leading management services company dedicated to providing comprehensive solutions for property owners seeking professional management of their event centres, gardens, halls, and short-term rental apartments. With a commitment to excellence, attention to detail, and a focus on maximizing value for our clients, we offer a range of management services tailored to meet their unique needs and objectives. ",
+    description: "Effective business management is the key to unlocking your organization’s full potential. As your trusted partner, we provide comprehensive business management services designed to streamline operations, boost productivity, and drive growth. Whether you’re a startup or a well-established company, our expert team is here to help you navigate the complexities of business management with ease and confidence.",
     services: [
       {
-        service: "Our services include:",
-        description: "",
+        service: "Business Consultancy",
+        image: 'consulting.webp',
+        description: "Our Management services encompass everything",
         subService: [
           {
-            name: "Event Center Management",
-            description:
-              "We specialize in managing event centers on behalf of property owners, handling all aspects of venue operations, event planning, and customer service. From booking and scheduling events to coordinating logistics, catering, and staffing, we ensure seamless and successful events that exceed expectations.",
+            name: "Strategic Planning",
           },
           {
-            name: "Garden Management",
-            description:
-              "Our team of experienced professionals oversees the management and maintenance of gardens and outdoor spaces, creating beautiful and inviting environments for relaxation, recreation, and special events. We handle landscaping, maintenance, event planning, and venue rental, maximizing the potential of the space for our clients.",
+            name: "Operational Improvement",
           },
           {
-            name: "Hall Management",
-            description:
-              "We manage versatile event halls and banquet facilities, providing property owners with a turnkey solution for venue management. From marketing and booking to setup, catering, and event coordination, we handle all aspects of venue operations to ensure a seamless and enjoyable experience for clients and guests.",
+            name: "Market Entry Strategies",
+          },
+        ],
+      },
+      {
+        service: "Financial Management",
+        image: 'financial.webp',
+        description: "To accomplish the aims and objectives of an organization, financial resources must be planned for, arranged, controlled, and monitored. Ensuring that a company maintains its financial stability and ability to fulfil its commitments is an essential component of business operations. ",
+        subService: [
+          {
+            name: "Accounting Services",
           },
           {
-            name: "Hotel/Short-Let Apartment Management",
-            description:
-              "We offer comprehensive management services for short-term rental apartments, handling all aspects of property management on behalf of owners. From marketing and guest communication to housekeeping, maintenance, and guest support, we ensure a hassle-free experience for property owners and guests alike.",
+            name: "Financial Planning and Analysis",
+          },
+          {
+            name: "Tax Advisory",
+          },
+          {
+            name: "Audit Services",
+          },
+        ],
+      },
+      {
+        service: "Project Management",
+        image: 'project-management.webp',
+        description: "Managing projects as a service includes organizing, carrying out, and supervising projects to guarantee they are finished on schedule, within the specified budget, and meeting the necessary quality criteria. It involves various tasks and duties designed to attain specific project aims and objectives.",
+        subService: [
+          {
+            name: "Project Planning and Execution",
+          },
+          {
+            name: "Risk Management",
+          },
+          {
+            name: "Quality Assurance",
+          },
+        ],
+      },
+      {
+        service: "Facilities Management",
+        image: 'facility-management.webp',
+        description: "Ensuring efficient facilities management requires aligning the physical workspace with the organization's workforce and operations. This practice combines elements of business management, architectural principles, and the sciences of human behavior and engineering.",
+        subService: [
+          {
+            name: "Maintenance Services",
+          },
+          {
+            name: "Space Planning",
+          },
+          {
+            name: "Security Management",
+          },
+        ],
+      },
+      {
+        service: "Hospitality and leisure industry Management",
+        image: '.webp',
+        description: "In the hospitality and leisure industry, management involves the supervision and organization of different services and activities to guarantee customer contentment, efficient operations, and financial success.",
+        subService: [
+          {
+            name: "Botanical Gardens",
+          },
+          {
+            name: "Public Parks",
+          },
+        ],
+      },
+      {
+        service: "Hotels and Resorts",
+        image: '.webp',
+        description: "Logdigital Hotels and Resorts management services encompass a comprehensive range of activities aimed at ensuring the smooth operation, high guest satisfaction, and profitability of the hotels and resorts under its management. These services are designed to cover every aspect of hotel and resort operations, from front desk management to financial oversight.",
+        subService: [
+          {
+            name: "Luxury Hotels",
+          },
+          {
+            name: "Boutique Hotels",
+          },
+          {
+            name: "Resorts",
+          },
+          {
+            name: "Budget Hotels",
+          },
+        ],
+      },
+      {
+        service: "Bars and Nightclubs",
+        image: 'bars.webp',
+        description: "Managing bars and nightclubs requires a unique set of skills and services to ensure smooth operations, attract and retain customers, maintain safety, and achieve profitability.",
+        subService: [
+          {
+            name: "Bars",
+          },
+          {
+            name: "Nightclubs",
+          },
+        ],
+      },
+      {
+        service: "Indoor Services",
+        image: 'indoor-services.webp',
+        description: "Management of indoor services encompasses a broad range of activities and responsibilities to ensure smooth operations, optimal efficiency, and high-quality service delivery in various indoor environments, such as offices, event spaces, retail establishments etc.",
+        subService: [
+          {
+            name: "Event Venues",
+          },
+          {
+            name: "Restaurants",
+          },
+          {
+            name: "Theaters and Cinemas",
+          },
+          {
+            name: "Spas and Wellness Centers",
+          },
+        ],
+      },
+      {
+        service: "Outdoor Services",
+        image: 'outdoor-services.webp',
+        description: "Management of outdoor services involves coordinating and overseeing various activities to ensure that outdoor environments are well-maintained, safe, and attractive. ",
+        subService: [
+          {
+            name: "Outdoor Event Spaces",
+          },
+          {
+            name: "Adventure Parks",
           },
         ],
       },
@@ -379,32 +360,83 @@ const servicesDetail = [
   {
     id: 4,
     name: "Outsourcing (BPO)",
+    bannerImg: '',
     shortDescription: "We leverage cutting-edge technology, industry best practices, and a global talent pool to deliver superior BPO services that drive business success. ",
-    description: "LogDigital is a premier Business Process Outsourcing (BPO) company dedicated to providing exceptional outsourcing solutions to businesses worldwide. With a focus on efficiency, quality, and cost-effectiveness, we specialize in delivering a wide range of BPO services tailored to meet the unique needs and objectives of our clients. ",
+    description: "In the fast-paced world of business, staying ahead means focusing on what you do best while entrusting other critical tasks to experts. At Logdigital, we offer comprehensive outsourcing (BPO) services designed to streamline your operations, boost efficiency, and drive growth. Whether you’re in tech, marketing, advertising, or management services, we’re here to handle the heavy lifting so you can concentrate on your core business.",
     services: [
       {
-        service: "Our comprehensive suite of BPO services includes:",
-        description: "",
+        service: "Tech Support and IT Services",
+        image: 'tech-support.webp',
+        description: "Keeping your tech infrastructure running smoothly is crucial for any business. Our tech support and IT services provide you with the expertise you need to ensure optimal performance and security.",
         subService: [
           {
-            name: "Customer Support",
-            description:
-              "Our skilled team of customer service professionals is available 24/7 to handle inquiries, provide technical support, and ensure customer satisfaction through various channels such as phone, email, chat, and social media.",
+            name: "Help Desk Support",
           },
           {
-            name: "Data Entry and Processing",
-            description:
-              "We offer accurate and timely data entry and processing services to help businesses streamline their operations, improve data accuracy, and focus on core business activities.",
+            name: "Network Management",
           },
           {
-            name: "Back Office Support",
-            description:
-              "Our back-office support services include administrative tasks, document management, order processing, and other essential functions to optimize efficiency and productivity.",
+            name: "IT Infrastructure Management",
           },
           {
-            name: "IT Outsourcing",
-            description:
-              "Our IT outsourcing solutions encompass a wide range of services, including software development, application maintenance, infrastructure management, cybersecurity, and technical support, to empower businesses with scalable and cost-effective IT solutions.",
+            name: "Cybersecurity",
+          },
+        ],
+      },
+      {
+        service: "Digital Marketing and Advertising",
+        image: 'digital-marketing2.webp',
+        description: "Effective marketing and advertising are key to reaching your audience and driving growth. Our digital marketing and advertising services help you create impactful campaigns that deliver results.",
+        subService: [
+          {
+            name: "Social Media Management",
+          },
+          {
+            name: "SEO and SEM",
+          },
+          {
+            name: "Content Creation",
+          },
+          {
+            name: "PPC Advertising",
+          },
+        ],
+      },
+      {
+        service: "Customer Service and Support",
+        image: 'customer-service.webp',
+        description: "Exceptional customer service is essential for maintaining customer satisfaction and loyalty. Our customer service and support solutions ensure that your customers receive the assistance they need, when they need it.",
+        subService: [
+          {
+            name: "Call Center Services",
+          },
+          {
+            name: "Email and Chat Support",
+          },
+          {
+            name: "Technical Support",
+          },
+          {
+            name: 'Customer Relationship Management (CRM)'
+          }
+        ],
+      },
+      {
+        service: "Business Management Services",
+        image: 'business-management.webp',
+        description: "Streamline your operations and improve efficiency with our business management services. From administrative tasks to financial management, we provide the support you need to keep your business running smoothly.",
+        subService: [
+          {
+            name: "Administrative Support",
+          },
+          {
+            name: "Financial Management",
+          },
+          {
+            name: "HR Management",
+          },
+          {
+            name: "Project Management",
           },
         ],
       },
