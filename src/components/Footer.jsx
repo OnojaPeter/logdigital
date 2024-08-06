@@ -6,7 +6,7 @@ import { FaLocationDot } from "react-icons/fa6";
 function Footer() {
     return (
         <>
-            <footer className="bg-gray-800 text-white pt-10 sm:pt-20 pb-10">
+            <footer className="bg-[#4682b4] text-white pt-10 sm:pt-20 pb-10">
                 <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16  ">
                     <div className="flex justify-between flex-col sm:flex-row gap-y-8  text-lg font-medium">
                         <div className="flex flex-col gap-4 sm:gap-7">
@@ -17,7 +17,6 @@ function Footer() {
                             <div className="flex flex-col gap-2 ">
                                 <p>Get in touch</p>
                                 <p>Lets make something great together</p>
-                                <p>Contact us to start a project, we'll get back to you soon</p>
                             </div>
 
 

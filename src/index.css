@@ -6,6 +6,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* header,footer #4682b4 */
+
 h1{
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
@@ -32,7 +34,8 @@ html{
 }
 body {
   overflow-x: hidden;
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
+  /* background-color: #4682b4; */
 }
 
 @media (max-width:640px) {
@@ -391,14 +394,14 @@ body {
 }
 
 .container-class input[type="radio"]:checked + label {
-  color: #185ee0;
+  color: #4682b4;
 }
 
-.container-class input[type="radio"]:checked + label > .notification {
-  background-color: #185ee0;
+/* .container-class input[type="radio"]:checked + label > .notification {
+  background-color: #4682b4;
   color: #fff;
   margin: 0px;
-}
+} */
 
 .container-class input[id="radio-1"]:checked ~ .glider {
   transform: translateX(0);
@@ -473,7 +476,7 @@ body {
 .card {
   /* width: 300px;
   height: 200px; */
-  background: linear-gradient(to right,#1976d2,#2196f3);
+  background: linear-gradient(to right,#4682b4,#8bcff1);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -488,7 +491,7 @@ body {
   width: 150px;
   height: 150px;
   content: "";
-  background: linear-gradient(to right,#65b1ef,#8ac5f3);
+  background: linear-gradient(to right,#b1dfe6,#8ac5f3);
   position: absolute;
   z-index: 1;
   border-radius: 50%;
@@ -525,7 +528,7 @@ body {
 }
 
 .learnMoreButton:hover {
-  background-color: #1c3097;
+  background-color: #4682b4;
   color: rgb(255, 255, 255);
   transition-duration: .2s;
 }

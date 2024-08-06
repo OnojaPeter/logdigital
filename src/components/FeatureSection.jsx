@@ -14,7 +14,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
     return (
         <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16">
             <div className="flex justify-center">
-                <span className={`uppercase font-bold px-3 py-1 border-2 ${sectionName === "about us" && 'border-gray-800'} rounded-full`}>{sectionName}</span>
+                <span className={`uppercase font-bold px-3 py-1 border-2 mb-10 ${sectionName === "about us" && 'border-gray-800 mb-1'} rounded-full`}>{sectionName}</span>
             </div>
 
             <div className="flex flex-col gap-y-6 md:flex-row md:gap-2 lg:gap-10 mt-6 md:mt-0 items-center">
@@ -24,7 +24,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                         initial="hidden"
                         animate={titleAnimation.controls}
                         variants={titleAnimation.textVariants}
-                        className={`text-3xl md:text-4xl font-bold mb-3 md:mb-8 capitalize ${sectionName === "about us" && "text-blue-500"}`}
+                        className={`text-3xl md:text-4xl font-bold mb-3 md:mb-8 capitalize ${sectionName === "about us" && "text-[#4682b4]"}`}
                     >
                         {title}
                     </motion.h2>
@@ -74,7 +74,7 @@ const FeatureSection = ({ sectionName, title, description, moreDescription, butt
                             whileTap={{ scale: 0.9 }}
                             initial="hidden"
                             animate={buttonAnimation.controls}
-                            className=" text-white font-medium px-6 py-3 bg-blue-500 rounded-md"
+                            className=" text-white font-medium px-6 py-3 bg-[#4682b4] rounded-md"
                         >
                             <Link to={link}>{buttonText}</Link>
                         </motion.button>

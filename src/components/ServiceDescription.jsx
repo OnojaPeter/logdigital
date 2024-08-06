@@ -40,7 +40,7 @@ const ServiceDescription = ({service, fSubService}) => {
                             {service.services.map((s, index)=> 
                                 <button 
                                     onClick={()=> handleClick(index)} 
-                                    className={`font-medium text-gray-700 py-4 px-6 border-b-2 hover:border-blue-500 ${isClicked === index && 'border-blue-500'}` }
+                                    className={`font-medium text-gray-700 py-4 px-6 border-b-2 hover:border-[#4682b4] ${isClicked === index && 'border-[#4682b4]'}` }
                                     key={index}>
                                         {s.service}
                                 </button>
@@ -89,21 +89,6 @@ const ServiceDescription = ({service, fSubService}) => {
                             </motion.div>
                         </AnimatePresence>
                     </div>
-                    {/* <div className={`w-full overflow-hidden transform transition-transform ease-in-out duration-500 ${slideOut && 'opacity-0'} ${slideIn ? 'translate-x-0' : 'translate-x-[110%]'}`}>
-                        <div className="my-10 flex flex-col gap-y-3 md:flex-row">
-                            <div className="md:px-4 w-full md:w-[50%]">
-                                <p>{ServiceToDisplay.description}</p>
-                                <div className="mt-4">
-                                    {ServiceToDisplay.subService.map((s, index)=>
-                                        <li key={index}>{s.name}</li>
-                                    )}
-                                </div>
-                            </div>
-                            <div className="md:px-4 w-full md:w-[50%]">
-                                <img className="object-cover w-full h-[350px]" src="/images/black-pic.png" alt="" />
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
             </section>
     );

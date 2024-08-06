@@ -63,10 +63,10 @@ const Navbar = () => {
   }, [selectedTab]);
 
   return (
-    <nav className={`${isFixed ? 'sticky  transition-all duration-500 ease-in-out' : 'relative '} ${isVisible ? 'md:translate-y-0' : 'md:-translate-y-full'}  bg-blue-200 md:py-4  top-0 left-0 right-0 z-50 `}>
+    <nav className={`${isFixed ? 'sticky  transition-all duration-500 ease-in-out' : 'relative '} ${isVisible ? 'md:translate-y-0' : 'md:-translate-y-full'}  bg-[#4682b4] md:py-3  top-0 left-0 right-0 z-50 `}>
       <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16 flex justify-between items-center">
         
-        <Link to="/" className="text-blue-900 text-2xl font-bold z-50 relative">LOGDIGITAL</Link>
+        <Link to="/" className="text-white text-2xl font-bold z-50 relative">LOGDIGITAL</Link>
         
         <ul className="md:flex space-x-3 lg:space-x-6 text-blue-900 hidden font-bold text-lg">
           {/* <Navlink -- 'translate-y-0' : '-translate-y-full' /> */}
@@ -124,7 +124,7 @@ const Navbar = () => {
                           to={service.path}
                           onClick={() => setIsServicesDropdownOpen(false)}
                           
-                          className="rounded-md mx-4 py-2 text-gray-800 hover:text-white hover:bg-blue-400 text-center"
+                          className="rounded-md mx-4 py-2 text-gray-800 hover:text-white hover:bg-[#4682b4] text-center"
                         >
                           <p onClick={() => setSelectedTab('radio-3')}>{service.name}</p>
                         </Link>
@@ -161,7 +161,7 @@ const Navbar = () => {
 
         <div className='md:hidden block cursor-pointer'>
           <button className='py-3 w-14 flex justify-center' onClick={()=>{setIsMobileMenuOpen(!isMobileMenuOpen)}} >
-            <FaBarsStaggered className='text-blue-900 text-3xl' />
+            <FaBarsStaggered className='text-white text-3xl' />
           </button>
         </div>
         
@@ -173,11 +173,11 @@ const Navbar = () => {
         } bg-white shadow-lg md:hidden w-full z-50 `}
       >
         {/* gradient */}
-        <div className='w-full h-full bg-white left-0 absolute top-0  bg-gradient-to-t from-white via-gray-200 to-blue-200'></div>
+        <div className='w-full h-full bg-white left-0 absolute top-0  bg-gradient-to-t from-white via-gray-200 to-[#4682b4]'></div>
 
         <div className="flex flex-col h-full relative z-50">
           <button
-            className="self-end p-4 text-blue-900"
+            className="self-end p-4 text-white"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 22 22" stroke="currentColor">
@@ -200,7 +200,7 @@ const Navbar = () => {
                                     <div className="relative">
                                       <a 
                                         href="#" 
-                                        className="relative text-5xl font-bold block px-4 py-1 text-gray-700 hover:bg-gray-100"
+                                        className="relative text-5xl font-bold block px-4 py-1 text-white hover:text-[#4682b4] hover:bg-gray-100"
                                         onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
                                       >
                                         <span >Services </span>{isServicesDropdownOpen ? <MdKeyboardArrowUp className='absolute top-2  sm:right-40 arrow' /> : <MdKeyboardArrowDown className='absolute top-2  sm:right-40 arrow' /> }
@@ -211,14 +211,14 @@ const Navbar = () => {
                                         }`}
                                       >
                                         {isServicesDropdownOpen && (
-                                          <div className="mt-2 bg-blue-100 rounded-md shadow-lg py-2 z-20">
+                                          <div className="mt-2 bg-[#4682b4] rounded-md shadow-lg py-2 z-20 mx-10">
                                             <div className="flex flex-col">
                                               {servicesDetail.map((service) => (
                                                 <Link 
                                                   key={service.id} 
                                                   to={service.path}
                                                   onClick={() => setIsMobileMenuOpen(false)}
-                                                  className="px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-900 text-center text-2xl font-medium "
+                                                  className="mx-8 py-2 text-white hover:bg-gray-700 text-center text-2xl font-medium rounded"
                                                 >
                                                   {service.name}
                                                 </Link>
@@ -232,7 +232,7 @@ const Navbar = () => {
                                     <Link
                                         onClick={() => setIsMobileMenuOpen(false)}
                                         to={item==="Home" ? "/" : `/${item.toLowerCase()}`}
-                                        className="text-5xl font-bold block px-4 text-gray-700 hover:bg-gray-100"
+                                        className="text-5xl font-bold block px-4 text-white hover:text-[#4682b4] hover:bg-gray-100"
                                     >
                                         {item}
                                     </Link>

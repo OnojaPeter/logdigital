@@ -8,7 +8,7 @@ const ServiceHero = ({service}) => {
                 <div className="w-full md:w-[30%] space-y-7 md:px-4">
                     <img className="h-[300px] w-[300px]" src="/images/black-pic.png" alt="img" />
                     <div className="space-y-2 capitalize lg:pr-5">
-                        <h2 className="text-3xl font-medium text-blue-500"> sam a. Jerry </h2>
+                        <h2 className="text-3xl font-medium text-[#4682b4]"> sam a. Jerry </h2>
                         <p>chairman, partner, {service.name} services</p>
                     </div>
                 </div>

@@ -13,7 +13,7 @@ const coreValues = [
 
 const CoreValues = () => {
   return (
-    <section className="py-8 md:py-20 bg-blue-50">
+    <section className="py-8 md:py-20 ">
       <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16">
         <div className="flex justify-center">
             <span className="uppercase font-bold px-3 py-1 border-2 border-gray-800 rounded-full">Values</span>
@@ -22,7 +22,7 @@ const CoreValues = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {coreValues.map((value, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center hover:bg-blue-100 transition-colors duration-300">
-              <value.icon className="text-blue-500 text-4xl mb-4 mx-auto" />
+              <value.icon className="text-[#4682b4] text-4xl mb-4 mx-auto" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">{value.title}</h3>
               <p className="text-gray-700">{value.description}</p>
             </div>

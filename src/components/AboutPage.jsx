@@ -18,9 +18,9 @@ function AboutPage() {
       <>
         <section >
           <div className="bg-gray-50  pb-8 md:pb-14">
-              <div className=" w-full relative h-28 sm:h-52">
+              <div className=" w-full relative h-48 sm:h-52">
                 <div className="aboutbg absolute h-full w-full top-0 left-0"></div>
-                <img className="h-28 sm:h-52 object-cover w-full " src="/images/business-5475663-1280-66b1506c24d0f.webp" alt="" />    {/*media-marketing.jpg*/}
+                <img className="h-48 sm:h-52 object-cover w-full " src="/images/business-5475663-1280-66b1506c24d0f.webp" alt="" />    {/*media-marketing.jpg*/}
                 <h1 className="uppercase text-gray-100 text-4xl sm:text-5xl md:text-6xl font-semibold absolute inset-0 flex justify-center items-center">About Us</h1>          
               </div>
             

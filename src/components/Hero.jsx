@@ -19,7 +19,6 @@ const Hero = () => {
     const images = [
         "/images/slide2.png",
         "/images/slide3.png",
-        // "/images/slide4.png",
         "/images/slide5.png",
         "/images/slide7.png"
     ];
@@ -48,12 +47,10 @@ const Hero = () => {
       };
 
     return (
-        <section className="pt-8 mb-10 md:mb-0 md:py-10  bg-blue-100 relative  ">{/* pt-5 svgBackground */}
+        <section className="pt-8 mb-10 md:mb-0 md:py-10   relative  ">{/* pt-5 svgBackground */}
             {/* BG gradient */}
-            <div className='w-full h-full bg-white left-0 absolute top-0  bg-gradient-to-t from-gray-50 via-gray-50 to-blue-200'></div>
-            {/* <div className='absolute w-96 h-96 flex items-center justify-center z-40 -left-28 -top-28'>
-                <div className='relative w-96 h-96 bg-blue-50 rounded-full gradient-border'></div>
-            </div> */}
+            {/* <div className='w-full h-full bg-white left-0 absolute top-0  bg-gradient-to-t from-gray-50 via-gray-50 to-blue-200'></div> */}
+            
             {/* <div className='absolute overflow-hidden hidden justify-center inset-0 top-0 z-40 '>
                 <div className='relative w-[400px] h-[400px] rounded-full relative blur-[70px] circle1 bg-opacity-50  bg-blue-300'></div>
                 <div className='relative w-[400px] h-[400px] rounded-full relative blur-[70px] circle2 bg-opacity-50  bg-gray-300'></div>
@@ -67,7 +64,7 @@ const Hero = () => {
                     initial="hidden"
                     animate={h1Animation.controls}
                     variants={h1Variants}
-                    className="hero-text font-bold">Your trusted partner in <span className='text-blue-700'> Technology, Marketing, & Business Management Excellence.</span></motion.h1> {/* Boost Your Online Presence with Digital Marketing Services*/}
+                    className="hero-text font-bold">Your trusted partner in <span className='text-[#4682b4]'> Technology, Marketing, & Business Management Excellence.</span></motion.h1> {/* Boost Your Online Presence with Digital Marketing Services*/}
 
                     <div className="flex flex-col gap-4 pr-[10%] sm:pr-[0%] lg:pr-[20%] text-gray-600 text-lg md:text-xl font-medium md:font-bold">
                         <motion.p 

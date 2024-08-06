@@ -8,14 +8,14 @@ const peter = [
 ]
 const ChooseUs = () => {
   return (
-    <section className="text-white py-8 bg-blue-500"> {/*chooseUsBg*/}
+    <section className="text-white py-14 bg-[#4682b4]"> {/*chooseUsBg*/}
 
         <FeatureSection
             sectionName="why choose us"
             title="choose us to grow your business"
             description="Partner with us for unparalleled expertise, innovation, and commitment to your business success."
             extraText={peter}
-            imageSrc="/images/choose.png"
+            imageSrc="/images/analytics.webp"
       />
     </section>
 
