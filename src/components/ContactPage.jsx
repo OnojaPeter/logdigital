@@ -60,12 +60,12 @@ const ContactPage = () => {
             <div className="max-w-[1400px] mx-auto text-center px-4 md:px-8 lg:px-16">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#4682b4] capitalize">want to get in touch?</h2>
 
-                <div className='flex flex-col-reverse md:flex-row justify-between gap-y-8 gap-x-12 lg:gap-x-20 mt-6 md:mt-12 border-2 border-[#4682b4] bg-[#] shadow-xl p-6 md:p-10 lg:p-16 rounded-lg'>
+                <div className='flex flex-col-reverse md:flex-row justify-between gap-y-8 gap-x-12 lg:gap-x-20 mt-6 md:mt-12 border border-[#4682b4] bg-[#90bce0] shadow-xl p-6 md:p-10 lg:p-16 rounded-lg'>
                     <div className='text-start font-medium text-gray-800'>
-                        <h2 className='capitalize font-bold text-xl mb-8 text-[#4682b4]'>lets join forces to create unique experiences</h2>
+                        <h2 className='capitalize font-bold text-xl mb-8 text-white'>lets join forces to create unique experiences</h2>
 
-                        <ul className="flex flex-col gap-3 mt-8">
-                            <li className="flex gap-2"><MdPhoneInTalk className="text-2xl text-[#4682b4]" /> <p>+5526171</p></li>
+                        <ul className="flex flex-col gap-3 mt-8 text-white">
+                            <li className="flex gap-2"><MdPhoneInTalk className="text-2xl text-[#4682b4]" /> <p>+2348034073641</p></li>
                             <li className="flex gap-2"><MdEmail className="text-2xl text-[#4682b4]" /> <p>info@logdigitalltd.com</p></li>
                             <li className="flex gap-2"><FaLocationDot className="text-2xl text-[#4682b4]" /> <p>Abuja, Nigeria</p></li>
                         </ul>

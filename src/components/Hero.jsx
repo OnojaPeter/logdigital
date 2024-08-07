@@ -64,9 +64,9 @@ const Hero = () => {
                     initial="hidden"
                     animate={h1Animation.controls}
                     variants={h1Variants}
-                    className="hero-text font-bold">Your trusted partner in <span className='text-[#4682b4]'> Technology, Marketing, & Business Management Excellence.</span></motion.h1> {/* Boost Your Online Presence with Digital Marketing Services*/}
+                    className="hero-text font-bold">Your trusted partner in <span className='text-[#4682b4]'> Technology, Marketing, & Business Management </span>Excellence.</motion.h1>
 
-                    <div className="flex flex-col gap-4 pr-[10%] sm:pr-[0%] lg:pr-[20%] text-gray-600 text-lg md:text-xl font-medium md:font-bold">
+                    <div className="flex flex-col gap-4 pr-[10%] sm:pr-[0%] lg:pr-[20%] text-gray-600 text-lg md:text-xl font-medium">
                         <motion.p 
                         ref={text1Animation.ref}
                         animate={text1Animation.controls} 
@@ -84,6 +84,7 @@ const Hero = () => {
                         whileTap={{ scale: 0.9 }}
                         initial="hidden" 
                         animate={text2Animation.controls}
+                        className='hero-btn rounded-full'
                         >
                             <button className="btn-17">
                                 <span className="text-container">

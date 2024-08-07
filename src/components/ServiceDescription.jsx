@@ -47,7 +47,6 @@ const ServiceDescription = ({service, fSubService}) => {
                             )}
                         </div>
                     </div>
-                    {/* <div className="pb-10" id="details"></div> */}
 
                     <div className="relative overflow-hidden w-full">
                         <AnimatePresence mode= 'wait'>
@@ -75,7 +74,7 @@ const ServiceDescription = ({service, fSubService}) => {
                                 </div>
                                 <div className="md:px-4 w-full md:w-[50%]">
                                 <motion.img
-                                    className="object-cover w-full h-[350px]"
+                                    className="object-cover w-full h-[300px]"
                                     src={`/images/${ServiceToDisplay?.image}`}
                                     alt=""
                                     initial="hidden"

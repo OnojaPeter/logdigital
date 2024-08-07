@@ -63,10 +63,14 @@ const Navbar = () => {
   }, [selectedTab]);
 
   return (
-    <nav className={`${isFixed ? 'sticky  transition-all duration-500 ease-in-out' : 'relative '} ${isVisible ? 'md:translate-y-0' : 'md:-translate-y-full'}  bg-[#4682b4] md:py-3  top-0 left-0 right-0 z-50 `}>
-      <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16 flex justify-between items-center">
+    <nav className={`${isFixed ? 'sticky  transition-all duration-500 ease-in-out' : 'relative '} ${isVisible ? 'md:translate-y-0' : 'md:-translate-y-full'}  bg-white md:py-3  top-0 left-0 right-0 z-50 `}>
+      <div className="max-w-[1400px] mx-auto px-4 md:px-4  flex justify-between items-center">
         
-        <Link to="/" className="text-white text-2xl font-bold z-50 relative">LOGDIGITAL</Link>
+        <Link to="/" className="text-white text-2xl font-bold z-50 relative overflow-hidden">
+          <img className='h-14 hidden lg:block' src="/images/main-logo.png" alt="" />
+          <img className='h-14 hidden md:block lg:hidden' src="/images/logo-icon.png" alt="" />
+          <img className='h-12 block md:hidden' src="/images/logo-icon.png" alt="" />
+        </Link>
         
         <ul className="md:flex space-x-3 lg:space-x-6 text-blue-900 hidden font-bold text-lg">
           {/* <Navlink -- 'translate-y-0' : '-translate-y-full' /> */}
@@ -81,7 +85,6 @@ const Navbar = () => {
               />
               <label className="tab" htmlFor="radio-1">
                 <Link to="/" onClick={() => setSelectedTab('radio-1')}>Home</Link>
-                {/* <span className="notification">2</span> */}
               </label>
 
               <input
@@ -161,7 +164,7 @@ const Navbar = () => {
 
         <div className='md:hidden block cursor-pointer'>
           <button className='py-3 w-14 flex justify-center' onClick={()=>{setIsMobileMenuOpen(!isMobileMenuOpen)}} >
-            <FaBarsStaggered className='text-white text-3xl' />
+            <FaBarsStaggered className='text-[#4682b4] text-3xl' />
           </button>
         </div>
         
@@ -173,7 +176,7 @@ const Navbar = () => {
         } bg-white shadow-lg md:hidden w-full z-50 `}
       >
         {/* gradient */}
-        <div className='w-full h-full bg-white left-0 absolute top-0  bg-gradient-to-t from-white via-gray-200 to-[#4682b4]'></div>
+        <div className='w-full h-full bg-white left-0 absolute top-0  bg-gradient-to-t from-white via-[#61829c] to-[#4682b4]'></div>
 
         <div className="flex flex-col h-full relative z-50">
           <button
@@ -211,14 +214,14 @@ const Navbar = () => {
                                         }`}
                                       >
                                         {isServicesDropdownOpen && (
-                                          <div className="mt-2 bg-[#4682b4] rounded-md shadow-lg py-2 z-20 mx-10">
+                                          <div className="mt-2 bg-[#4682b4] rounded-md shadow-lg py-2 z-20">
                                             <div className="flex flex-col">
                                               {servicesDetail.map((service) => (
                                                 <Link 
                                                   key={service.id} 
                                                   to={service.path}
                                                   onClick={() => setIsMobileMenuOpen(false)}
-                                                  className="mx-8 py-2 text-white hover:bg-gray-700 text-center text-2xl font-medium rounded"
+                                                  className="mx-4 py-2 text-white hover:bg-gray-700 text-center text-2xl font-medium rounded"
                                                 >
                                                   {service.name}
                                                 </Link>

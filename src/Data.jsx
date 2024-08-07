@@ -29,7 +29,7 @@ const servicesDetail = [
   {
     id: 1,
     name: "Marketing & Advertising",
-    bannerImg: '',
+    bannerImg: 'banner2.webp',
     shortDescription: "We offer an extensive range of market and advertising services designed to elevate your brand, enhance your market presence, and drive business growth. ",
     description:
       "At LogDigital, we’re not just about marketing; we’re about creating meaningful connections and driving your business forward. Whether you’re a budding startup or an established brand, our expert team is here to help you navigate the dynamic world of marketing and advertising with innovative strategies tailored to your unique needs.",
@@ -114,7 +114,7 @@ const servicesDetail = [
   {
     id: 2,
     name: "Technology Services",
-    bannerImg: '',
+    bannerImg: 'tech-support.webp',
     shortDescription: "Our tech services encompass everything from IT support and network management to advanced cybersecurity and cloud solutions. ",
     description:
       "We believe in harnessing the power of technology to drive innovation, streamline operations, and empower your business to reach new heights. Our expert team is here to provide you with top-notch tech solutions tailored to your unique needs. Whether you’re a startup, a growing business, or an established enterprise, we’re dedicated to helping you navigate the ever-evolving tech landscape with ease and confidence.",
@@ -206,7 +206,7 @@ const servicesDetail = [
   {
     id: 3,
     name: "Management services",
-    bannerImg: '',
+    bannerImg: 'bars.webp',
     shortDescription: "With a commitment to excellence, and a focus on maximizing value for our clients, we offer a range of management services tailored to meet their unique needs.",
     description: "Effective business management is the key to unlocking your organization’s full potential. As your trusted partner, we provide comprehensive business management services designed to streamline operations, boost productivity, and drive growth. Whether you’re a startup or a well-established company, our expert team is here to help you navigate the complexities of business management with ease and confidence.",
     services: [
@@ -360,7 +360,7 @@ const servicesDetail = [
   {
     id: 4,
     name: "Outsourcing (BPO)",
-    bannerImg: '',
+    bannerImg: 'banner3.webp',
     shortDescription: "We leverage cutting-edge technology, industry best practices, and a global talent pool to deliver superior BPO services that drive business success. ",
     description: "In the fast-paced world of business, staying ahead means focusing on what you do best while entrusting other critical tasks to experts. At Logdigital, we offer comprehensive outsourcing (BPO) services designed to streamline your operations, boost efficiency, and drive growth. Whether you’re in tech, marketing, advertising, or management services, we’re here to handle the heavy lifting so you can concentrate on your core business.",
     services: [
