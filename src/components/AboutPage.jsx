@@ -30,25 +30,12 @@ function AboutPage() {
                   Welcome to LogDigital Limited: Your Partner in Tech, Marketing, and Business Management Excellence
                 </p>
                  <div className="space-y-3 text-justify">
-                  {aboutDetails.map(about => 
-                    <div>
+                  {aboutDetails.map((about, index) => 
+                    <div key={index}>
                       <span className="text-blue-400 text-xl">{about.heading}</span>
                       <p>{about.texts}</p>
                     </div>
                   )}
-
-                  {/* <p>
-                    At <span className="text-xl text-gray-800">LogDigital</span>, we transform visionary ideas into tangible success stories. Our firm stands at the intersection of cutting-edge technology, strategic marketing, and dynamic business management, offering a holistic approach to driving growth and innovation.
-                    In an era where digital transformation is paramount, we equip businesses with the tools, strategies, and insights needed to stay ahead of the curve.
-                  </p> 
-                  <p>
-                    <span className="text-xl text-gray-800">Our tech solutions</span> harness the power of the latest advancements, ensuring seamless integration and optimal performance. Meanwhile, <span className="text-xl text-gray-800">our marketing strategies</span> are tailored to capture the essence of your brand, engaging your target audience with precision and creativity.
-                    But we don’t stop there. <span className="text-xl text-gray-800">Our business management services</span> are designed to streamline operations, enhance efficiency, and foster sustainable growth.
-                  </p> 
-                  <p>
-                    Whether you’re a startup looking to scale or an established enterprise aiming to innovate, LogDigital is your trusted partner in navigating the complexities of the modern business landscape.
-                    Join us on a journey of innovation, impact, and excellence. At LogDigital, we don't just envision the future—we create it.
-                  </p> */}
                  </div>
                 
               </div>

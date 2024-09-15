@@ -332,7 +332,7 @@ const Navbar = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed left-0 right-0 bg-white text-black h-screen origin-top md:hidden">
+            className="fixed left-0 right-0 bg-white text-black h-full origin-top md:hidden">
             <div className="flex w-full justify-center h-full">
               <motion.div
                 variants={containerVariants}
@@ -383,7 +383,7 @@ const Navbar = () => {
                       <motion.div
                         variants={linkVariants2}
                       >
-                        <Link to={menu.route}>{menu.name}</Link>
+                        <Link onClick={() => setIsMobileMenuOpen(false)} to={menu.route}>{menu.name}</Link>
                       </motion.div>
                     }
                   </div>
