@@ -6,11 +6,11 @@ const ServiceHero = ({service}) => {
         <section className="text-gray-600">
             <div className="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16 my-12 flex flex-col md:flex-row">
                 <div className="w-full md:w-[30%] space-y-7 md:px-4">
-                    <img className="h-[300px] w-[300px]" src="/images/black-pic.png" alt="img" />
-                    <div className="space-y-2 capitalize lg:pr-5">
+                    <img className="h-[200px] lg:h-[300px] w-full lg:w-[300px]" src={`/images/${service.bannerImg}`} alt="img" />
+                    {/* <div className="space-y-2 capitalize lg:pr-5">
                         <h2 className="text-3xl font-medium text-[#4682b4]"> sam a. Jerry </h2>
                         <p>chairman, partner, {service.name} services</p>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="w-full md:w-[70%] md:px-4 space-y-7 mt-5 md:mt-0 text-justify">

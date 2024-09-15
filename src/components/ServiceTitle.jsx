@@ -33,7 +33,7 @@ const ServiceTitle = ({service}) => {
               <img className="h-full w-full object-cover" src={`/images/${service.bannerImg}`} alt="" />
             </div>
             <div className="overflow-hidden relative flex items-center  min-h-[218px] max-w-[1400px] mx-auto px-4 md:px-8 lg:px-16">
-              <div className="relative items-center h-full text-gray-100 space-y-8 z-20 mx-4 z-10">
+              <div className="relative items-center h-full text-gray-100 space-y-8 z-20 mx-4">
                   <h1 className="text-6xl ">{service.name}</h1>
                   <p className="flex items-center gap-2"><Link to={'/'}>Home</Link> <IoChevronForward /> {service.name}</p>
               </div>

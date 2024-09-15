@@ -10,7 +10,7 @@ function Service() {
   const { id } = useParams();
   const service = servicesDetail.find((s) => s.path === `/services/${id}`);
   const firstSubService = service.services[0]
-  // console.log('firstSubService:', firstSubService)
+  // console.log('service:', service)
 
   if (!service) {
     return <div>Service not found</div>;
