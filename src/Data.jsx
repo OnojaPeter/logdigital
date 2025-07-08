@@ -237,12 +237,6 @@ const servicesDetail = [
           {
             name: "Financial Planning and Analysis",
           },
-          {
-            name: "Tax Advisory",
-          },
-          {
-            name: "Audit Services",
-          },
         ],
       },
       {
